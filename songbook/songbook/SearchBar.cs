@@ -49,13 +49,21 @@ namespace songbook
         }
         private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var selectedItem = ((ArtistOrSong)((ListBox)sender).SelectedItem);
+            var selectedItem = ((MusicItem)((ListBox)sender).SelectedItem);
             if (selectedItem == null)
             {
                 return;
             }
-            SelectionChanged(((ArtistOrSong)((ListBox)sender).SelectedItem).sourceSong);
-            resultSearchControl.Visibility = Visibility.Collapsed;
+            if (selectedItem is Song)
+            {
+                SelectionChanged((Song)selectedItem);
+                resultSearchControl.Visibility = Visibility.Collapsed;
+            }
+            if (selectedItem is Artist)
+            {
+                //to do view group
+            }             
+           
         }
         private void searchControl_TextChanged(object sender, TextChangedEventArgs e)
         {
