@@ -21,13 +21,14 @@
                  FontSize="26"
                  Visibility="Collapsed"     
                  >
-                 
+
             <ListBox.ItemTemplate>
-            <DataTemplate>
+                <DataTemplate>
                     <TextBlock  Text="{Binding}"/>
-            </DataTemplate>
+                </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <TextBox x:Name="SongTextControl" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Margin="0,0,-6,-624" Opacity="0.99" IsReadOnly="True"/>
 
     </Grid>
 </Page>

@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Windows.UI.Xaml.Controls;
 
 namespace songbook
 {
     class SongWindow
     {
+        private SearchBar searchBar;
+        private TextBox textControl;
+        public SongWindow(TextBox textControl, SearchBar searchBar)
+        {
+            this.textControl = textControl;
+            this.searchBar = searchBar;
+        }
+
+        private void ShowSong(Song song)
+        {
+            textControl.Text = song.Text;
+        }
     }
 }

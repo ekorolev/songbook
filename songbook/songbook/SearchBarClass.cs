@@ -42,7 +42,7 @@ namespace songbook
             SearchAction(((TextBox)sender).Text);
         }
 
-        public void SearchAction(string StringToSearch)
+        private void SearchAction(string StringToSearch)
         {
             ObservableCollection<ArtistOrSong> tmpCollection = new ObservableCollection<ArtistOrSong>();
             ArtistOrSong newItem = new ArtistOrSong();
