@@ -29,6 +29,6 @@
             </ListBox.ItemTemplate>
         </ListBox>
         
-        <TextBox x:Name="SongTextControl" Grid.Row="1" TextWrapping="Wrap" Margin="0,0,0,-579" VerticalAlignment="Stretch" IsReadOnly="True" />
+        <TextBox x:Name="SongTextControl" Grid.Row="1" TextWrapping="Wrap" Margin="0,118.5,0,-578.5" VerticalAlignment="Stretch" IsReadOnly="True" />
     </Grid>
 </Page>

@@ -37,21 +37,21 @@ namespace songbook
         private TextBox searchControl;
         private ListBox resultSearchControl;
 
-        public delegate void SelectionChangedEventHandler(object sender, SelectionChangedEventArgs e);
+        public delegate void SelectionChangedEventHandler(Song song);
         public event SelectionChangedEventHandler SelectionChanged;
 
         public SearchBar(TextBox searchControl, ListBox resultSearchControl)
         {
             this.searchControl = searchControl;
             this.resultSearchControl = resultSearchControl;
-            searchControl.TextChanged += searchControl_TextChanged;           
+            searchControl.TextChanged += searchControl_TextChanged;
+            resultSearchControl.SelectionChanged += ResultSearchControl_SelectionChanged;
         }
-
-        private void ResultSearchControl_ItemSelected(object sender, TextChangedEventArgs e)
+        private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-         
-        }
 
+            SelectionChanged(((ArtistOrSong)((ListBox)sender).SelectedItem).sourceSong);
+        }
         private void searchControl_TextChanged(object sender, TextChangedEventArgs e)
         {
             SearchAction(((TextBox)sender).Text);
@@ -59,6 +59,7 @@ namespace songbook
 
         public void SearchAction(string StringToSearch)
         {
+            //if (StringToSearch.Length == 0) return;
             ObservableCollection<ArtistOrSong> tmpCollection = new ObservableCollection<ArtistOrSong>();
             List<Song> songs = FileManager.Songs.ToList();
             var songquery = from song in songs where(song.FullName.Contains(StringToSearch)) select song;

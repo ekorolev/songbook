@@ -23,11 +23,7 @@ namespace songbook
         {
             this.textControl = textControl;
             this.searchBar = searchBar;
-            this.searchBar.SelectionChanged += ResultSearchControl_SelectionChanged; 
-        }
-        private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            ShowSong(((ArtistOrSong)sender).sourceSong);
+            this.searchBar.SelectionChanged += ShowSong; 
         }
         private void ShowSong(Song song)
         {
