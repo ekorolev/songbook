@@ -37,6 +37,9 @@ namespace songbook
         {
             
             this.InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Required;
+
+            var t = FileManager.Songs;
             this.NavigationCacheMode = NavigationCacheMode.Required;            
             SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl);
             VacationSpots test= new VacationSpots(1);
