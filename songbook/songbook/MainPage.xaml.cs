@@ -48,7 +48,7 @@ namespace songbook
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
             VacationSpots test= new VacationSpots();
-            listBox1.ItemsSource = test;
+            ResultSearchControl.ItemsSource = null;
          }
 
         /// <summary>
@@ -70,7 +70,8 @@ namespace songbook
         private void search_TextChanged(object sender, TextChangedEventArgs e)
         {
             VacationSpots tt = new VacationSpots(4);
-            listBox1.ItemsSource = tt; 
+            ResultSearchControl.ItemsSource = tt;
+            ResultSearchControl.Visibility = Visibility.Visible;
         }
 
         private void listSearch_SelectionChanged(object sender, SelectionChangedEventArgs e)
