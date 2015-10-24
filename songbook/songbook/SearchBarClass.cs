@@ -15,14 +15,17 @@ namespace songbook
 {
     class SearchBarClass
     {
-        public SearchBarClass(TextBox SearchControl, ListBox ResultSearchControl)
+        ListBox ResultSearchControl;
+        TextBox SearchControl;
+        public SearchBarClass(TextBox search, ListBox result)
         {
-
+            ResultSearchControl = result;
+            SearchControl = search;
         }
 
         public void SearchAction(string query)
         {
-
+            ResultSearchControl.ItemsSource = null;
         }
     }
 }

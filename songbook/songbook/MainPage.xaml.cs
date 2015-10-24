@@ -35,12 +35,12 @@ namespace songbook
     {
         public MainPage()
         {
-
+           
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
-            SearchBarClass SearchBar = new SearchBarClass(SearchContol, ResultSearchControl);
-            VacationSpots test= new VacationSpots();
+            SearchBarClass SearchBar = new SearchBarClass(SearchControl, ResultSearchControl);
+            VacationSpots test= new VacationSpots(2);
             //VacationSpots test= new VacationSpots(0);
             ResultSearchControl.ItemsSource = null;
          }
