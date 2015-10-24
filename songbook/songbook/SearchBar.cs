@@ -78,7 +78,12 @@ namespace songbook
             //}
             ObservableCollection<MusicItem> tmpCollection = new ObservableCollection<MusicItem>();
             List<Song> songs = FileManager.Songs.ToList();
+            List<Artist> artists = FileManager.Artists.ToList();
             List<MusicItem> musicItems = new List<MusicItem>();
+            foreach (var artist in artists)
+            {
+                musicItems.Add(artist);
+            }
             foreach (var song in songs)
             {
                 musicItems.Add(song);
