@@ -13,23 +13,33 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <StackPanel>
-        <TextBox x:Name="SearchControl" Grid.Row="0" PlaceholderText="Search"
-                 FontSize="26" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas>
+            <StackPanel >
+                <TextBox x:Name="SearchControl" Grid.Row="0" PlaceholderText="Search"
+                 FontSize="26" Width="400" />
 
-        <ListBox x:Name="ResultSearchControl"
+                <ListBox x:Name="ResultSearchControl"
                  Grid.Row="1" MaxHeight="200"
                  FontSize="26"
-                 Visibility="Collapsed" Canvas.ZIndex="1"     
+                 Visibility="Collapsed" Canvas.ZIndex="1000"     
                  >
-                 
-            <ListBox.ItemTemplate>
-            <DataTemplate>
-                    <TextBlock  Text="{Binding}"/>
-            </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
-        </StackPanel>
-        <TextBox x:Name="SongTextControl" Grid.Row="1" TextWrapping="Wrap" Margin="0,118.5,0,-578.5" VerticalAlignment="Stretch" IsReadOnly="True" />
+
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock  Text="{Binding}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+            <TextBox x:Name="SongTextControl" Canvas.ZIndex="-3" 
+                 Grid.Row="1" TextWrapping="Wrap"  
+                     VerticalAlignment="Stretch" IsReadOnly="True" 
+                     Height="700" Width="400" Canvas.Top="60" 
+                     />
+        </Canvas>
     </Grid>
+
 </Page>
