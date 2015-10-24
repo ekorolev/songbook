@@ -9,6 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <ComboBox  x:Name="search" IsSynchronizedWithCurrentItem="False" IsDropDownOpen="True" PlaceholderText="Search" MaxDropDownHeight="4"                  
+                  
+                  >
+         
+        </ComboBox>
+       
     </Grid>
 </Page>
