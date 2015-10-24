@@ -59,9 +59,7 @@ namespace songbook
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
-              
-
-        private void listSearch_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
