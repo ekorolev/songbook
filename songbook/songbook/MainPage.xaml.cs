@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -13,10 +14,20 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace songbook
 {
+    class VacationSpots : ObservableCollection<string>
+    {
+        public VacationSpots(int count)
+        {
+            for(int i=0;i<count;++i)
+            Add("name");
+            
+        }
+    }
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -24,10 +35,16 @@ namespace songbook
     {
         public MainPage()
         {
+            
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
             var t = FileManager.Songs;
+            this.NavigationCacheMode = NavigationCacheMode.Required;            
+            SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl);
+            VacationSpots test= new VacationSpots(1);
+            //VacationSpots test= new VacationSpots(0);
+            ResultSearchControl.ItemsSource = null;
          }
 
         /// <summary>
@@ -45,9 +62,11 @@ namespace songbook
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
-        public void ComboBox_Click(object sender, RoutedEventArgs e)
+              
+
+        private void listSearch_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-        
+
         }
     }
 }

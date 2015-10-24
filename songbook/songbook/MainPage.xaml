@@ -9,11 +9,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <ComboBox  x:Name="search" IsSynchronizedWithCurrentItem="False" IsDropDownOpen="True" PlaceholderText="Search" MaxDropDownHeight="4"                  
-                  
-                  >
-         
-        </ComboBox>
-       
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="SearchControl" Grid.Row="0" PlaceholderText="Search"
+                 FontSize="26"   />
+
+        <ListBox x:Name="ResultSearchControl"
+                 Grid.Row="1" MaxHeight="200"
+                 FontSize="26"
+                 Visibility="Collapsed"     
+                 ItemsSource="{Binding test}"
+                 SelectionChanged="ResultSearchControl_SelectionChanged"
+            />
     </Grid>
 </Page>
