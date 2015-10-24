@@ -38,7 +38,7 @@ namespace songbook
 
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;            
-            SearchBarClass SearchBar = new SearchBarClass(SearchControl, ResultSearchControl);
+            SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl);
             VacationSpots test= new VacationSpots(1);
             //VacationSpots test= new VacationSpots(0);
             ResultSearchControl.ItemsSource = null;
@@ -65,7 +65,7 @@ namespace songbook
 
             TextBox strSearch = (TextBox)sender;
             
-            VacationSpots testList = new VacationSpots(strSearch.Text.Length);
+            VacationSpots testList = new VacationSpots(strSearch.Text.Length);            
             ResultSearchControl.ItemsSource = testList;
             ResultSearchControl.Visibility = Visibility.Visible;
             
