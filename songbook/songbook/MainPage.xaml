@@ -12,7 +12,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBox x:Name="SearchControl" Grid.Row="0" PlaceholderText="Search"
                  FontSize="26"  TextChanged="search_TextChanged" />
@@ -20,8 +19,9 @@
         <ListBox x:Name="ResultSearchControl"
                  Grid.Row="1" MaxHeight="200"
                  FontSize="26"
-            Visibility="Collapsed"     
-            ItemsSource="{Binding test}" 
+                 Visibility="Collapsed"     
+                 ItemsSource="{Binding test}"
+                 SelectionChanged="ResultSearchControl_SelectionChanged"
             />
     </Grid>
 
