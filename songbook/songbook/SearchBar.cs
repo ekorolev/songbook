@@ -24,6 +24,11 @@ namespace songbook
         {
             public string Name;
             public byte Difference;
+            public ArtistOrSong(string _name, byte _difference)
+            {
+                Name = _name;
+                Difference = _difference;
+            }
             public override string ToString()
             {
                 return Name;
@@ -45,16 +50,11 @@ namespace songbook
         public void SearchAction(string StringToSearch)
         {
             ObservableCollection<ArtistOrSong> tmpCollection = new ObservableCollection<ArtistOrSong>();
-            ArtistOrSong newItem = new ArtistOrSong();
-            newItem.Name = "Name of record";
-            newItem.Difference = 0;
-            for (int i = 0; i < new Random().Next(4); ++i)
-            {
-                newItem.Difference = (byte)new Random().Next(1);
-                tmpCollection.Add(newItem);
-            }
-            /*function of search*/
-            //every Searched element add to tmpCollection          
+            List<Song> songs = FileManager.Songs.ToList();
+            var songquery = from song in songs where(song.Name.Contains(StringToSearch)) select song;
+            foreach (Song song in songquery)
+                tmpCollection.Add(new ArtistOrSong(song.Name, (byte)1));
+             
             resultSearchControl.Visibility = Visibility.Visible;
             resultSearchControl.ItemsSource = tmpCollection;
         }

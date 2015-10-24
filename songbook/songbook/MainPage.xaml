@@ -14,7 +14,7 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <TextBox x:Name="SearchControl" Grid.Row="0" PlaceholderText="Search"
-                 FontSize="26"   />
+                 FontSize="26" />
 
         <ListBox x:Name="ResultSearchControl"
                  Grid.Row="1" MaxHeight="200"
