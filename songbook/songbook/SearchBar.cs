@@ -24,7 +24,7 @@ namespace songbook
         {
             Name = _name;
             Difference = _difference;
-            sourceSong=_sourceSong;
+            sourceSong = _sourceSong;
         }
         public override string ToString()
         {
@@ -49,8 +49,13 @@ namespace songbook
         }
         private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            var selectedItem = ((ArtistOrSong)((ListBox)sender).SelectedItem);
+            if (selectedItem == null)
+            {
+                return;
+            }
             SelectionChanged(((ArtistOrSong)((ListBox)sender).SelectedItem).sourceSong);
+            resultSearchControl.Visibility = Visibility.Collapsed;
         }
         private void searchControl_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -62,10 +67,10 @@ namespace songbook
             //if (StringToSearch.Length == 0) return;
             ObservableCollection<ArtistOrSong> tmpCollection = new ObservableCollection<ArtistOrSong>();
             List<Song> songs = FileManager.Songs.ToList();
-            var songquery = from song in songs where(song.FullName.Contains(StringToSearch)) select song;
+            var songquery = from song in songs where (song.FullName.Contains(StringToSearch)) select song;
             foreach (Song song in songquery)
-            tmpCollection.Add(new ArtistOrSong(song.FullName, (byte)1, song));
-                      
+                tmpCollection.Add(new ArtistOrSong(song.FullName, (byte)1, song));
+
             resultSearchControl.Visibility = Visibility.Visible;
             resultSearchControl.ItemsSource = tmpCollection;
         }

@@ -24,9 +24,11 @@ namespace songbook
             this.textControl = textControl;
             this.searchBar = searchBar;
             this.searchBar.SelectionChanged += ShowSong; 
+            
         }
         private void ShowSong(Song song)
         {
+            
             textControl.Text = song.Text;
         }
        
