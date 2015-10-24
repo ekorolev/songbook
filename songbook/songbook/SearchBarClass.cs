@@ -17,15 +17,24 @@ namespace songbook
     {
         ListBox ResultSearchControl;
         TextBox SearchControl;
-        public SearchBarClass(TextBox search, ListBox result)
+        public SearchBarClass(TextBox search, ListBox result);
+        struct ArtistOrSong
+        {
+            public string Name;
+            public byte Difference;
+        }
+        public SearchBarClass(TextBox SearchControl, ListBox ResultSearchControl)
         {
             ResultSearchControl = result;
             SearchControl = search;
         }
 
-        public void SearchAction(string query)
+        public void SearchAction(string StringToSearch)
         {
             ResultSearchControl.ItemsSource = null;
+            /* function of search*/
+            //every Searched element add to Collection<string>
+
         }
     }
 }
