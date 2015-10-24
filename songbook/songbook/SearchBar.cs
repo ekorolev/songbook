@@ -64,12 +64,21 @@ namespace songbook
 
         public void SearchAction(string StringToSearch)
         {
-            //if (StringToSearch.Length == 0) return;
-            ObservableCollection<ArtistOrSong> tmpCollection = new ObservableCollection<ArtistOrSong>();
+            //if (StringToSearch.Length == 0)
+            //{
+            //    return;
+            //}
+            ObservableCollection<MusicItem> tmpCollection = new ObservableCollection<MusicItem>();
             List<Song> songs = FileManager.Songs.ToList();
-            var songquery = from song in songs where (song.FullName.Contains(StringToSearch)) select song;
-            foreach (Song song in songquery)
-                tmpCollection.Add(new ArtistOrSong(song.FullName, (byte)1, song));
+            List<MusicItem> musicItems = new List<MusicItem>();
+            foreach (var song in songs)
+            {
+                musicItems.Add(song);
+            }
+            //create list of musicitem
+            var musicItemquery = from musicItem in musicItems where (musicItem.ScreenName.Contains(StringToSearch)) select musicItem;
+            foreach (MusicItem musicItem in musicItemquery)
+                tmpCollection.Add(musicItem);
 
             resultSearchControl.Visibility = Visibility.Visible;
             resultSearchControl.ItemsSource = tmpCollection;
