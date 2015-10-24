@@ -35,7 +35,7 @@ namespace songbook
     {
         public MainPage()
         {
-
+           
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;            
             SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl);
