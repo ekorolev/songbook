@@ -21,21 +21,11 @@ namespace songbook
 {
     class VacationSpots : ObservableCollection<string>
     {
-        public VacationSpots()
+        public VacationSpots(int count)
         {
-
-            Add("Spain");
-            Add("France");
-            Add("Peru");
-            Add("Mexico");
-            Add("Italy");
-        }
-        public VacationSpots(int i)
-        {
-            Add("Spain");
-            Add("France");
-            Add("Peru");
-
+            for(int i=0;i<count;++i)
+            Add("name");
+            
         }
     }
     /// <summary>
@@ -51,6 +41,7 @@ namespace songbook
 
             SearchBarClass SearchBar = new SearchBarClass(SearchContol, ResultSearchControl);
             VacationSpots test= new VacationSpots();
+            //VacationSpots test= new VacationSpots(0);
             ResultSearchControl.ItemsSource = null;
          }
 
@@ -72,9 +63,14 @@ namespace songbook
         
         private void search_TextChanged(object sender, TextChangedEventArgs e)
         {
-            VacationSpots tt = new VacationSpots(4);
-            ResultSearchControl.ItemsSource = tt;
+
+            TextBox strSearch = (TextBox)sender;
+            
+            VacationSpots testList = new VacationSpots(strSearch.Text.Length);
+            ResultSearchControl.ItemsSource = testList;
             ResultSearchControl.Visibility = Visibility.Visible;
+            
+
         }
 
         private void listSearch_SelectionChanged(object sender, SelectionChangedEventArgs e)
