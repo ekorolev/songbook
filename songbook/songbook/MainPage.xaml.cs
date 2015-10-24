@@ -37,16 +37,9 @@ namespace songbook
         {
            
             this.InitializeComponent();
-<<<<<<< HEAD
-            this.NavigationCacheMode = NavigationCacheMode.Required;
-
-            SearchBarClass SearchBar = new SearchBarClass(SearchControl, ResultSearchControl);
-            VacationSpots test= new VacationSpots(2);
-=======
             this.NavigationCacheMode = NavigationCacheMode.Required;            
             SearchBarClass SearchBar = new SearchBarClass(SearchControl, ResultSearchControl);
             VacationSpots test= new VacationSpots(1);
->>>>>>> origin/branch
             //VacationSpots test= new VacationSpots(0);
             ResultSearchControl.ItemsSource = null;
          }
