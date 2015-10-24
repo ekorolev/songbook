@@ -20,13 +20,15 @@ namespace songbook
         private TextBox searchControl;
         private ListBox resultSearchControl;
        
-        struct ArtistOrSong
+       public struct ArtistOrSong
         {
             public string Name;
             public byte Difference;
         }
         public SearchBar(TextBox searchControl, ListBox resultSearchControl)
         {
+            this.searchControl = searchControl;
+            this.resultSearchControl = resultSearchControl;
             searchControl.TextChanged += searchControl_TextChanged;
         }
 
@@ -41,14 +43,14 @@ namespace songbook
             ArtistOrSong newItem;
             newItem.Name = "Name of record";
             newItem.Difference = 0;
-            for (int i = 0; i < Random(4); ++i)
+            for (int i = 0; i < new Random().Next(4); ++i)
             {
-                newItem.Difference = Random(1);
+                newItem.Difference = (byte) new Random().Next(1);
                 tmpCollection.Add(newItem);
             }
             /*function of search*/
             //every Searched element add to tmpCollection          
-
+            resultSearchControl.Visibility = Visibility.Visible;
             resultSearchControl.ItemsSource = tmpCollection;
         }
     }
