@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace songbook
@@ -34,6 +35,7 @@ namespace songbook
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
             test Test;
+            SearchBarClass SearchBar = new SearchBarClass(SearchContol, ResultSearchControl);
          }
 
         /// <summary>
