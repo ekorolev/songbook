@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Phone.UI.Input;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
@@ -25,6 +26,9 @@ namespace songbook
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public delegate void BackPressedEventHandler();
+        public event BackPressedEventHandler BackPressed;
+        private SearchBar searchBarPanel;
         public MainPage()
         {
             
@@ -34,7 +38,8 @@ namespace songbook
             this.NavigationCacheMode = NavigationCacheMode.Required;            
             SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl);
             SongWindow songWindow = new SongWindow(SongTextControl, SearchBar);
-                        
+            searchBarPanel = SearchBar;
+            HardwareButtons.BackPressed += back_Click;            
          }
 
         /// <summary>
@@ -60,6 +65,26 @@ namespace songbook
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
            SongTextControl.Width = ResultSearchControl.Width = SearchControl.Width = Window.Current.Bounds.Width;
+        }
+        private void back_Click(object sender, BackPressedEventArgs e)
+        {
+            
+            if (searchBarPanel.conditionOfResultSearchControl == (byte)0)
+            {
+                e.Handled = true;
+            }
+            if (searchBarPanel.conditionOfResultSearchControl == (byte)1)
+            {
+                ResultSearchControl.ItemsSource = new ObservableCollection<MusicItem>();
+                ResultSearchControl.Visibility = Visibility.Collapsed;
+                e.Handled = true;
+            }
+            if (searchBarPanel.conditionOfResultSearchControl == (byte)2)
+            {
+                searchBarPanel.SearchAction(searchBarPanel.previousStringToSearch);
+                e.Handled = true;
+            }
+            
         }
     }
 }
