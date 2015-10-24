@@ -19,15 +19,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace songbook
 {
-    class VacationSpots : ObservableCollection<string>
-    {
-        public VacationSpots(int count)
-        {
-            for(int i=0;i<count;++i)
-            Add("name");
-            
-        }
-    }
+   
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -38,13 +30,11 @@ namespace songbook
             
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
-
-            var t = FileManager.Songs;
+            
             this.NavigationCacheMode = NavigationCacheMode.Required;            
             SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl);
-            VacationSpots test= new VacationSpots(1);
-            //VacationSpots test= new VacationSpots(0);
-            ResultSearchControl.ItemsSource = null;
+            SongWindow songWindow = new SongWindow(SongTextControl, SearchBar);
+                        
          }
 
         /// <summary>

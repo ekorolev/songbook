@@ -28,6 +28,7 @@
             </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-
+        
+        <TextBox x:Name="SongTextControl" Grid.Row="1" TextWrapping="Wrap" Margin="0,270.5,0,-252" />
     </Grid>
 </Page>
