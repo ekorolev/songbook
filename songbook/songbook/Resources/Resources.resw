@@ -117,7 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="TestString" xml:space="preserve">
-    <value>123455678</value>
+  <data name="AllSongs" xml:space="preserve">
+    <value>Король и Шут - Кукла колдуна
+Сплин - Выхода нет</value>
+  </data>
+  <data name="Король и Шут - Кукла колдуна" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;text&gt;
+	&lt;string accords=" Dm             F       Gm         A"&gt;Темный мрачный коридор, я на цыпочках как вор&lt;/string&gt;
+	&lt;string&gt;Пробираюсь чуть дыша, чтобы не вспугнуть&lt;/string&gt;
+	&lt;string&gt;Тех, кто спит уже давно, тех, кому не все равно&lt;/string&gt;
+	&lt;string&gt;В чью я комнату тайком желаю заглянуть,&lt;/string&gt;
+	&lt;string&gt;Чтобы увидеть&lt;/string&gt;
+	
+	&lt;string&gt;Припев:&lt;/string&gt;
+	&lt;string accord="        Dm"&gt;       Как бессонница в час ночной&lt;/string&gt;
+	&lt;string accord="                Gm        A"&gt;       Меняет, нелюдимая, облик твой,&lt;/string&gt;
+	&lt;string accord="         Dm"&gt;       Чьих невольница ты идей,&lt;/string&gt;
+	&lt;string accord="                Gm           A"&gt;       Зачем тебе охотиться на людей?&lt;/string&gt;
+	
+	&lt;string&gt;Проигрыш (2 раза)&lt;/string&gt;
+	&lt;string accords=" Dm             F       Gm         A"&gt;Темный мрачный коридор, я на цыпочках как вор&lt;/string&gt;
+	&lt;string&gt;Пробираюсь чуть дыша, чтобы не вспугнуть&lt;/string&gt;
+	&lt;string&gt;Тех, кто спит уже давно, тех, кому не все равно&lt;/string&gt;
+	&lt;string&gt;В чью я комнату тайком желаю заглянуть,&lt;/string&gt;
+	&lt;string&gt;Чтобы увидеть&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="Сплин - Выхода нет" xml:space="preserve">
+    <value>&lt;string accord="C                  G         D                 Em"&gt;  Сколько лет прошло, все о том же гудят провода,&lt;/string&gt;
+&lt;string accord="                C       G    D"&gt;  Все того же ждут самолеты.&lt;/string&gt;
+&lt;string accord="C               G       D               Em"&gt;  Девочка с глазами из самого синего льда&lt;/string&gt;
+&lt;string accord="              C       G"&gt;  Тает под огнем пулемета.&lt;/string&gt;
+&lt;string accord="C            G              D"&gt;  Должен же растаять хоть кто-то...&lt;/string&gt;
+&lt;string&gt;Припев:&lt;/string&gt;
+&lt;string accord="                   Em"&gt;        Скоро рассвет,&lt;/string&gt;
+&lt;string accord="                C"&gt;        Выхода нет,&lt;/string&gt;
+&lt;string accord="                   G        D"&gt;        Ключ поверни и полетели&lt;/string&gt;
+&lt;string accord="                  Em"&gt;        Нужно вписать&lt;/string&gt;
+&lt;string accord="                     C"&gt;        В чью-то тетрадь&lt;/string&gt;
+&lt;string accord="                       G        D"&gt;        Кровью, как в метрополитене:&lt;/string&gt;
+&lt;string accord="                 C     D"&gt;        "Выхода нет".&lt;/string&gt;
+&lt;string accord="                Em"&gt;        Выхода нет!&lt;/string&gt;</value>
   </data>
 </root>
