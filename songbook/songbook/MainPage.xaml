@@ -14,21 +14,20 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <TextBox x:Name="SearchControl" Grid.Row="0" PlaceholderText="Search"
-                 FontSize="26"   />
+                 FontSize="26" />
 
         <ListBox x:Name="ResultSearchControl"
                  Grid.Row="1" MaxHeight="200"
                  FontSize="26"
                  Visibility="Collapsed"     
                  >
-
+                 
             <ListBox.ItemTemplate>
-                <DataTemplate>
+            <DataTemplate>
                     <TextBlock  Text="{Binding}"/>
-                </DataTemplate>
+            </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBox x:Name="SongTextControl" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Margin="0,0,-6,-624" Opacity="0.99" IsReadOnly="True"/>
 
     </Grid>
 </Page>

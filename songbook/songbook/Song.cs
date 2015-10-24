@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace songbook
 {
-    class Song
+    public class Song
     {
         public readonly string FullName;
         public readonly string SongName;
