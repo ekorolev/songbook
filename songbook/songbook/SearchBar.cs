@@ -61,9 +61,9 @@ namespace songbook
         {
             ObservableCollection<ArtistOrSong> tmpCollection = new ObservableCollection<ArtistOrSong>();
             List<Song> songs = FileManager.Songs.ToList();
-            var songquery = from song in songs where(song.Name.Contains(StringToSearch)) select song;
+            var songquery = from song in songs where(song.FullName.Contains(StringToSearch)) select song;
             foreach (Song song in songquery)
-            tmpCollection.Add(new ArtistOrSong(song.Name, (byte)1, song));
+            tmpCollection.Add(new ArtistOrSong(song.FullName, (byte)1, song));
                       
             resultSearchControl.Visibility = Visibility.Visible;
             resultSearchControl.ItemsSource = tmpCollection;

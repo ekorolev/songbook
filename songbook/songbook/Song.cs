@@ -24,6 +24,9 @@ namespace songbook
 
         public Song(string name)
         {
+            if (name == null)
+                name = String.Empty;
+
             FullName = name;
             var values = name.Split(new[] {"-"}, StringSplitOptions.RemoveEmptyEntries).Select(s=>s.Trim()).ToList();
             SongName = values[1];

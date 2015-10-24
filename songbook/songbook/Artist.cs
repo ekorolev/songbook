@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace songbook
 {
-    class Artist
+    public class Artist
     {
         public static List<Artist> Artists = new List<Artist>();
 
