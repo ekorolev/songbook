@@ -19,8 +19,8 @@ namespace songbook
     public class SongWindow
     {
         private SearchBar searchBar;
-        private TextBox textControl;
-        public SongWindow(TextBox textControl, SearchBar searchBar)
+        private Control textControl;
+        public SongWindow(Control textControl, SearchBar searchBar)
         {
             this.textControl = textControl;
             this.searchBar = searchBar;
@@ -30,7 +30,7 @@ namespace songbook
         private void ShowSong(Song song)
         {
             XDocument doc = XDocument.Parse(song.Text);
-            textControl.Text = string.Join(Environment.NewLine, doc.Root.Descendants("string").Select(t => t.Value).ToList());
+            //textControl.Text = string.Join(Environment.NewLine, doc.Root.Descendants("string").Select(t => t.Value).ToList());
         }
 
     }

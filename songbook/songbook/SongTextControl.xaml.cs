@@ -22,6 +22,30 @@ namespace songbook
         public SongTextControl()
         {
             this.InitializeComponent();
+            for (int i = 0; i < 14; i++)
+            {
+                this.GridComponent.Children.Add(new Button
+                {
+                    Content = "12345",
+                    //Margin = new Thickness(138, i * 20, 0, 0),
+                    VerticalAlignment = VerticalAlignment.Top,
+                    HorizontalAlignment = HorizontalAlignment.Left
+                });
+            }
+
+        }
+        //HorizontalAlignment="Left" Margin="138,128,0,0" VerticalAlignment="Top"
+        private List<Control> addedControls = new List<Control>();
+
+        public void AddLine(string mainLine, string extraString = null)
+        {
+            this.GridComponent.Children.Add(new Button
+            {
+                Content = "12345",
+                Margin = new Thickness(138, 128, 0, 0),
+                VerticalAlignment = VerticalAlignment.Top,
+                HorizontalAlignment = HorizontalAlignment.Left
+            });
         }
     }
 }

@@ -8,8 +8,10 @@
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
-    
-    <Grid>
 
+    <Grid>
+        <ScrollViewer>
+            <StackPanel x:Name="GridComponent" Margin="0" Background="#FFD80808" AreScrollSnapPointsRegular="True"/>
+        </ScrollViewer>
     </Grid>
 </UserControl>
