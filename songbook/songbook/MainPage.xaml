@@ -12,10 +12,10 @@
         <StackPanel>
         <TextBox x:Name="search" PlaceholderText="Search"
                  TextChanged="search_TextChanged"/>
-            <ListBox x:Name="listSearch"
-                     SelectionChanged="listSearch_SelectionChanged"
-                     
-                     />
+            
+        <ListBox Name="listBox1"
+            ItemsSource="{Binding test}"
+            />
         </StackPanel>
     </Grid>
 </Page>
