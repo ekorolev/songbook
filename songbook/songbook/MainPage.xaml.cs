@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -18,12 +19,25 @@ using Windows.UI.Xaml.Navigation;
 
 namespace songbook
 {
-    public class test{
-        public List<int> testList;
-        public test() {
-            for (int i = 0; i < 100; ++i) testList.Add(i);
+    class VacationSpots : ObservableCollection<string>
+    {
+        public VacationSpots()
+        {
+
+            Add("Spain");
+            Add("France");
+            Add("Peru");
+            Add("Mexico");
+            Add("Italy");
         }
-        };
+        public VacationSpots(int i)
+        {
+            Add("Spain");
+            Add("France");
+            Add("Peru");
+
+        }
+    }
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -31,11 +45,13 @@ namespace songbook
     {
         public MainPage()
         {
+
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
-            test Test;
             SearchBarClass SearchBar = new SearchBarClass(SearchContol, ResultSearchControl);
+            VacationSpots test= new VacationSpots();
+            ResultSearchControl.ItemsSource = null;
          }
 
         /// <summary>
@@ -53,9 +69,17 @@ namespace songbook
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
-        public void ComboBox_Click(object sender, RoutedEventArgs e)
-        {
         
+        private void search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            VacationSpots tt = new VacationSpots(4);
+            ResultSearchControl.ItemsSource = tt;
+            ResultSearchControl.Visibility = Visibility.Visible;
+        }
+
+        private void listSearch_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

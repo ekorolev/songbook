@@ -10,12 +10,13 @@
 
     <Grid>
         <StackPanel>
-        <TextBox x:Name="search" PlaceholderText="Search"
+        <TextBox x:Name="SearchControl" PlaceholderText="Search"
                  TextChanged="search_TextChanged"/>
-            <ListBox x:Name="listSearch"
-                     SelectionChanged="listSearch_SelectionChanged"
-                     
-                     />
+            
+        <ListBox x:Name="ResultSearchControl"
+            Visibility="Collapsed"     
+            ItemsSource="{Binding test}"
+            />
         </StackPanel>
     </Grid>
 </Page>
