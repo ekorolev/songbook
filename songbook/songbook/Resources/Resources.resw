@@ -145,19 +145,22 @@
 &lt;/text&gt;</value>
   </data>
   <data name="Сплин - Выхода нет" xml:space="preserve">
-    <value>&lt;string accord="C                  G         D                 Em"&gt;  Сколько лет прошло, все о том же гудят провода,&lt;/string&gt;
-&lt;string accord="                C       G    D"&gt;  Все того же ждут самолеты.&lt;/string&gt;
-&lt;string accord="C               G       D               Em"&gt;  Девочка с глазами из самого синего льда&lt;/string&gt;
-&lt;string accord="              C       G"&gt;  Тает под огнем пулемета.&lt;/string&gt;
-&lt;string accord="C            G              D"&gt;  Должен же растаять хоть кто-то...&lt;/string&gt;
-&lt;string&gt;Припев:&lt;/string&gt;
-&lt;string accord="                   Em"&gt;        Скоро рассвет,&lt;/string&gt;
-&lt;string accord="                C"&gt;        Выхода нет,&lt;/string&gt;
-&lt;string accord="                   G        D"&gt;        Ключ поверни и полетели&lt;/string&gt;
-&lt;string accord="                  Em"&gt;        Нужно вписать&lt;/string&gt;
-&lt;string accord="                     C"&gt;        В чью-то тетрадь&lt;/string&gt;
-&lt;string accord="                       G        D"&gt;        Кровью, как в метрополитене:&lt;/string&gt;
-&lt;string accord="                 C     D"&gt;        "Выхода нет".&lt;/string&gt;
-&lt;string accord="                Em"&gt;        Выхода нет!&lt;/string&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;text&gt;
+	&lt;string accord="C                  G         D                 Em"&gt;  Сколько лет прошло, все о том же гудят провода,&lt;/string&gt;
+	&lt;string accord="                C       G    D"&gt;  Все того же ждут самолеты.&lt;/string&gt;
+	&lt;string accord="C               G       D               Em"&gt;  Девочка с глазами из самого синего льда&lt;/string&gt;
+	&lt;string accord="              C       G"&gt;  Тает под огнем пулемета.&lt;/string&gt;
+	&lt;string accord="C            G              D"&gt;  Должен же растаять хоть кто-то...&lt;/string&gt;
+	&lt;string&gt;Припев:&lt;/string&gt;
+	&lt;string accord="                   Em"&gt;        Скоро рассвет,&lt;/string&gt;
+	&lt;string accord="                C"&gt;        Выхода нет,&lt;/string&gt;
+	&lt;string accord="                   G        D"&gt;        Ключ поверни и полетели&lt;/string&gt;
+	&lt;string accord="                  Em"&gt;        Нужно вписать&lt;/string&gt;
+	&lt;string accord="                     C"&gt;        В чью-то тетрадь&lt;/string&gt;
+	&lt;string accord="                       G        D"&gt;        Кровью, как в метрополитене:&lt;/string&gt;
+	&lt;string accord="                 C     D"&gt;        "Выхода нет".&lt;/string&gt;
+	&lt;string accord="                Em"&gt;        Выхода нет!&lt;/string&gt;
+&lt;/text&gt;</value>
   </data>
 </root>
