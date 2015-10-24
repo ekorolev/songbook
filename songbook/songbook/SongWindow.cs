@@ -5,15 +5,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+﻿using Windows.UI.Xaml.Controls;
+
+
 namespace songbook
 {
-    class SongWindow
+    public class SongWindow
     {
+        private SearchBar searchBar;
+        private TextBox textControl;
+        public SongWindow(TextBox textControl, SearchBar searchBar)
+        {
+            this.textControl = textControl;
+            this.searchBar = searchBar;
+            this.searchBar.SelectionChanged += ResultSearchControl_SelectionChanged; 
+        }
+        private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ShowSong(((ArtistOrSong)sender).sourceSong);
+        }
+        private void ShowSong(Song song)
+        {
+            textControl.Text = song.Text;
+        }
+       
     }
 }

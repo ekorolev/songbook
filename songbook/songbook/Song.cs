@@ -1,6 +1,6 @@
 ﻿namespace songbook
 {
-    class Song
+    public class Song
     {
         public readonly string Name;
 
