@@ -39,7 +39,17 @@ namespace songbook
 
         public void SearchAction(string StringToSearch)
         {
-            ObservableCollection<ArtistOrSong> tmpCollection = new ObservableCollection<ArtistOrSong>();
+            ObservableCollection<ArtistOrSong> ReturnCollection = new ObservableCollection<ArtistOrSong>();
+            List<Song> songs = FileManager.Songs.ToList();
+            var songQuery =
+                from song in songs
+                where (song.Name.Contains(StringToSearch))
+                select song;
+            foreach(Song s in songQuery)
+            {
+                ReturnCollection.Add(new ArtistOrSong(s.Name, 0));
+            }
+            ObservableCollection < ArtistOrSong > tmpCollection = new ObservableCollection<ArtistOrSong>();
             ArtistOrSong newItem;
             newItem.Name = "Name of record";
             newItem.Difference = 0;
