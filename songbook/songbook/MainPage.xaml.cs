@@ -17,6 +17,12 @@ using Windows.UI.Xaml.Navigation;
 
 namespace songbook
 {
+    public class test{
+        public List<int> testList;
+        public test() {
+            for (int i = 0; i < 100; ++i) testList.Add(i);
+        }
+        };
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -25,9 +31,10 @@ namespace songbook
         public MainPage()
         {
             this.InitializeComponent();
-
             this.NavigationCacheMode = NavigationCacheMode.Required;
-        }
+
+            test Test;
+         }
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -43,6 +50,10 @@ namespace songbook
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+        }
+        public void ComboBox_Click(object sender, RoutedEventArgs e)
+        {
+        
         }
     }
 }
