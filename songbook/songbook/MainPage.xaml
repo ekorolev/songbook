@@ -38,7 +38,7 @@
             <TextBox x:Name="SongTextControl" Canvas.ZIndex="-3" 
                  Grid.Row="1" TextWrapping="Wrap"  
                      VerticalAlignment="Stretch" IsReadOnly="True" 
-                     Height="297" Width="400" Canvas.Top="80" 
+                     Height="549" Width="400" Canvas.Top="90" 
                      />
         </Canvas>
     </Grid>
