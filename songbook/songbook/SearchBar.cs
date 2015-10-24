@@ -61,7 +61,20 @@ namespace songbook
             }
             if (selectedItem is Artist)
             {
-                //to do view group
+              List<Song> listofArtistSongs = ((Artist)selectedItem).SongsOfArtist;
+              List<MusicItem> musicItems = new List<MusicItem>();
+              foreach (var song in listofArtistSongs)
+              {
+                  musicItems.Add(song);
+              }
+              ObservableCollection<MusicItem> tmpCollection = new ObservableCollection<MusicItem>();
+              foreach (MusicItem musicItem in musicItems)
+              {
+                  tmpCollection.Add(musicItem);
+                  resultSearchControl.Visibility = Visibility.Visible;
+                  resultSearchControl.ItemsSource = tmpCollection;
+              }
+               
             }             
            
         }
