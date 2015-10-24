@@ -7,6 +7,8 @@ namespace songbook
     static class FileManager
     {
         private static List<Song> songs;
+        private static ResourceLoader resourse = new ResourceLoader();
+
         public static List<Song> Songs
         {
             get
@@ -30,12 +32,16 @@ namespace songbook
         private static void InitializeSongs()
         {
             songs = new List<Song>();
-            ResourceLoader resourse = new ResourceLoader();
             var songNames = resourse.GetString("AllSongs").Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
             foreach (var songName in songNames)
             {
                 songs.Add(new Song(songName));
             }
+        }
+
+        public static string GetTextOfSong(Song song)
+        {
+            return resourse.GetString(song.FullName);
         }
     }
 }

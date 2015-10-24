@@ -16,7 +16,7 @@ namespace songbook
             {
                 if (_text == null)
                 {
-                    _text = null;
+                    _text = FileManager.GetTextOfSong(this);
                 }
                 return _text;
             }
