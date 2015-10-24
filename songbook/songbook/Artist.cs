@@ -17,7 +17,7 @@ namespace songbook
 
         public List<Song> SongsOfArtist = new List<Song>(); 
 
-        public Artist GetOrAddArtist(string name, Song song)
+        public static Artist GetOrAddArtist(string name, Song song)
         {
             if (Artists.Exists(a => a.Name == name))
             {
