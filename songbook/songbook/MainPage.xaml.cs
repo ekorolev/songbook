@@ -17,12 +17,6 @@ using Windows.UI.Xaml.Navigation;
 
 namespace songbook
 {
-    public class test{
-        public List<int> testList;
-        public test() {
-            for (int i = 0; i < 100; ++i) testList.Add(i);
-        }
-        };
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -33,7 +27,7 @@ namespace songbook
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
-            test Test;
+            var t = FileManager.Songs;
          }
 
         /// <summary>
