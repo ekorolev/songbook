@@ -19,11 +19,16 @@ namespace songbook
     {
         private TextBox searchControl;
         private ListBox resultSearchControl;
-       
-       public struct ArtistOrSong
+
+        public class ArtistOrSong
         {
             public string Name;
             public byte Difference;
+            public override string ToString()
+            {
+                return Name;
+            }
+
         }
         public SearchBar(TextBox searchControl, ListBox resultSearchControl)
         {
@@ -40,12 +45,12 @@ namespace songbook
         public void SearchAction(string StringToSearch)
         {
             ObservableCollection<ArtistOrSong> tmpCollection = new ObservableCollection<ArtistOrSong>();
-            ArtistOrSong newItem;
+            ArtistOrSong newItem = new ArtistOrSong();
             newItem.Name = "Name of record";
             newItem.Difference = 0;
             for (int i = 0; i < new Random().Next(4); ++i)
             {
-                newItem.Difference = (byte) new Random().Next(1);
+                newItem.Difference = (byte)new Random().Next(1);
                 tmpCollection.Add(newItem);
             }
             /*function of search*/
