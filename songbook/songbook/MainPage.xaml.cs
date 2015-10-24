@@ -35,7 +35,7 @@ namespace songbook
     {
         public MainPage()
         {
-           
+            
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;            
             SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl);
@@ -59,18 +59,7 @@ namespace songbook
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
-        
-        private void search_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-            TextBox strSearch = (TextBox)sender;
-            
-            VacationSpots testList = new VacationSpots(strSearch.Text.Length);            
-            ResultSearchControl.ItemsSource = testList;
-            ResultSearchControl.Visibility = Visibility.Visible;
-            
-
-        }
+              
 
         private void listSearch_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

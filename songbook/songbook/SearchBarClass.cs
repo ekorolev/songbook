@@ -19,6 +19,7 @@ namespace songbook
     {
         private TextBox searchControl;
         private ListBox resultSearchControl;
+       
         struct ArtistOrSong
         {
             public string Name;
@@ -26,7 +27,12 @@ namespace songbook
         }
         public SearchBar(TextBox searchControl, ListBox resultSearchControl)
         {
+            searchControl.TextChanged += searchControl_TextChanged;
+        }
 
+        private void searchControl_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            SearchAction(((TextBox)sender).Text);
         }
 
         public void SearchAction(string StringToSearch)
@@ -42,6 +48,7 @@ namespace songbook
             }
             /*function of search*/
             //every Searched element add to tmpCollection          
+
             resultSearchControl.ItemsSource = tmpCollection;
         }
     }
