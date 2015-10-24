@@ -32,10 +32,16 @@ namespace songbook
         public void SearchAction(string StringToSearch)
         {
             ObservableCollection<ArtistOrSong> tmpCollection = new ObservableCollection<ArtistOrSong>();
+            ArtistOrSong newItem;
+            newItem.Name = "Name of record";
+            newItem.Difference = 0;
+            for (int i = 0; i < Random(4); ++i)
+            {
+                newItem.Difference = Random(1);
+                tmpCollection.Add(newItem);
+            }
             /*function of search*/
             //every Searched element add to tmpCollection          
-
-
             resultSearchControl.ItemsSource = tmpCollection;
         }
     }
