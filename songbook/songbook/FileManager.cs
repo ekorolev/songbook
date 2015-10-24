@@ -7,7 +7,7 @@ namespace songbook
     static class FileManager
     {
         private static List<Song> songs;
-        public static IEnumerable<Song> Songs
+        public static List<Song> Songs
         {
             get
             {
@@ -18,6 +18,8 @@ namespace songbook
                 return songs;
             }
         }
+
+        public static List<Artist> Artists => Artist.Artists;
 
         private static void InitializeSongs()
         {
