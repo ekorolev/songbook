@@ -52,9 +52,14 @@ namespace songbook
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
-        private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
+        //private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+           
+        //}
 
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+           SongTextControl.Width = ResultSearchControl.Width = SearchControl.Width = Window.Current.Bounds.Width;
         }
     }
 }
