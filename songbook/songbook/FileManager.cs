@@ -19,7 +19,13 @@ namespace songbook
             }
         }
 
-        public static List<Artist> Artists => Artist.Artists;
+        public static List<Artist> Artists
+        {
+            get
+            {
+                return Artist.Artists;
+            }
+        }
 
         private static void InitializeSongs()
         {
