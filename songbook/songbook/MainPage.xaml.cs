@@ -42,7 +42,8 @@ namespace songbook
             searchBarPanel = SearchBar;
             songWindowPanel = songWindow;
             musicItemsViewerPanel = musicItemsViewer;
-            HardwareButtons.BackPressed += back_Click;            
+            HardwareButtons.BackPressed += back_Click;     
+
          }
 
         /// <summary>
