@@ -3,11 +3,14 @@ using System.Linq;
 
 namespace songbook
 {
-    public class Artist
+    public class Artist : MusicItem
     {
         public static List<Artist> Artists = new List<Artist>();
-
         public readonly string Name;
+        public string ScreenName { get{
+            return Name;
+        }
+        }
         private Artist(string name, Song firstSong)
         {
             Name = name;
@@ -15,9 +18,12 @@ namespace songbook
             SongsOfArtist.Add(firstSong);
         }
 
-        public List<Song> SongsOfArtist = new List<Song>(); 
-
-        public Artist GetOrAddArtist(string name, Song song)
+        public List<Song> SongsOfArtist = new List<Song>();
+        public override string ToString()
+        {
+            return ScreenName;
+        }
+        public static Artist GetOrAddArtist(string name, Song song)
         {
             if (Artists.Exists(a => a.Name == name))
             {
