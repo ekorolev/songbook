@@ -83,6 +83,9 @@
     <PRIResource Include="Resources\Resources.resw" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccordDialog.xaml.cs">
+      <DependentUpon>AccordDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -107,6 +110,27 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\A.gif" />
+    <Content Include="Assets\A7.gif" />
+    <Content Include="Assets\Am.gif" />
+    <Content Include="Assets\C.gif" />
+    <Content Include="Assets\C7.gif" />
+    <Content Include="Assets\Cm.gif" />
+    <Content Include="Assets\Cwm.gif" />
+    <Content Include="Assets\D.gif" />
+    <Content Include="Assets\Dm.gif" />
+    <Content Include="Assets\dunno.jpg" />
+    <Content Include="Assets\E.gif" />
+    <Content Include="Assets\E7.gif" />
+    <Content Include="Assets\Em.gif" />
+    <Content Include="Assets\F.gif" />
+    <Content Include="Assets\Fm.gif" />
+    <Content Include="Assets\Fw.gif" />
+    <Content Include="Assets\Fwm.gif" />
+    <Content Include="Assets\G.gif" />
+    <Content Include="Assets\G7.gif" />
+    <Content Include="Assets\Gm.gif" />
+    <Content Include="Assets\Hm.gif" />
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\SmallLogo.scale-240.png" />
     <Content Include="Assets\SplashScreen.scale-240.png" />
@@ -122,6 +146,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AccordDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

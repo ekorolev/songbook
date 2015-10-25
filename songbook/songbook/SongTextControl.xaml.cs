@@ -7,6 +7,7 @@ using System.Text;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -21,6 +22,8 @@ namespace songbook
 {
     public sealed partial class SongTextControl : UserControl
     {
+        AccordDialog accordDialog = new AccordDialog();
+
         public SongTextControl()
         {
             this.InitializeComponent();
@@ -43,12 +46,14 @@ namespace songbook
                     }
                     else
                     {
-                        stack.Children.Add(new HyperlinkButton()
+                        var hl = new HyperlinkButton()
                         {
                             Content = elem,
                             FontSize = 18,
                             Background = new SolidColorBrush(Colors.Green)
-                        });
+                        };
+                        hl.Click += Hl_Click;
+                        stack.Children.Add(hl);
                     }
                 }
                 Panel.Children.Add(stack);
@@ -59,6 +64,14 @@ namespace songbook
                 FontSize = 18,
                 HorizontalAlignment = HorizontalAlignment.Stretch
             });
+        }
+
+        private void Hl_Click(object sender, RoutedEventArgs e)
+        {
+            var hl = (HyperlinkButton) sender;
+            var accordText = (string)hl.Content;
+            accordDialog.SetAccord(hl.Content.ToString());
+            accordDialog.ShowAsync();
         }
 
         public void ClearText()

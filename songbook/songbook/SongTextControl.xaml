@@ -13,5 +13,7 @@
         <ScrollViewer ZoomMode="Enabled">
             <StackPanel x:Name="Panel" Margin="0" Background="#FFD80808" AreScrollSnapPointsRegular="True"/>
         </ScrollViewer>
+        <Canvas HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+
     </Grid>
 </UserControl>
