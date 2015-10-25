@@ -39,7 +39,7 @@ namespace songbook
             AppState state;
             try
             {
-                 state = States.Pop();
+                 state = States.Pop();                 
             }
             catch
             {

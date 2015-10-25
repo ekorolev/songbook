@@ -55,36 +55,37 @@ namespace songbook
         }
         private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            AppStates.SaveState(songTextControl, listArtistsControl);
             var selectedItem = ((MusicItem)((ListBox)sender).SelectedItem);
             if (selectedItem == null)
             {
                 return;
             }
+            AppStates.SaveState(songTextControl, listArtistsControl);
             if (selectedItem is Song)
-            {
-               
+            {               
                 SelectionChanged((Song)selectedItem);
                 resultSearchControl.Visibility = Visibility.Collapsed;                
             }
+            
             if (selectedItem is Artist)
             {               
                 resultSearchControl.Visibility = Visibility.Collapsed;   
                 ArtistChanged((Artist)selectedItem);                
-            }              
+            }
+            
         }
         private void searchControl_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
+        {            
             SearchAction(((TextBox)sender).Text);
         }
 
         public void SearchAction(string StringToSearch)
         {
-            //if (StringToSearch.Length == 0)
-            //{
-            //    return;
-            //}
+            if (StringToSearch.Length == 0)
+            {
+                resultSearchControl.Visibility = Visibility.Collapsed;
+                return;
+            }
             ObservableCollection<MusicItem> tmpCollection = new ObservableCollection<MusicItem>();
             List<Song> songs = FileManager.Songs.ToList();
             List<Artist> artists = FileManager.Artists.ToList();

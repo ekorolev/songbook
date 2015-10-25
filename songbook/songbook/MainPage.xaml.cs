@@ -42,8 +42,7 @@ namespace songbook
             searchBarPanel = SearchBar;
             songWindowPanel = songWindow;
             musicItemsViewerPanel = musicItemsViewer;
-            HardwareButtons.BackPressed += back_Click;
-            //AppStates.SaveState(SongTextControl, ListArtistsControl);
+            HardwareButtons.BackPressed += back_Click;            
          }
 
         /// <summary>
@@ -64,10 +63,8 @@ namespace songbook
        
         private void back_Click(object sender, BackPressedEventArgs e)
         {
-            
             AppStates.RestoreState(SongTextControl, ListArtistsControl);
-            e.Handled = true;
-            
+            e.Handled = true;            
         }
 
     }

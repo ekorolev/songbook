@@ -42,8 +42,7 @@ namespace songbook
             this.searchBar = searchBar;
             searchBar.SelectionChanged += SelectionChanged;
             searchBar.ArtistChanged += ArtistChanged;
-            listArtistsControl.SelectionChanged += MusicItemChange;
-            
+            listArtistsControl.SelectionChanged += MusicItemChange;            
         }
         private void SelectionChanged(Song song)
         {
@@ -81,10 +80,11 @@ namespace songbook
                 songTextControl.Visibility = Visibility.Visible;
                 listArtistsControl.Visibility = Visibility.Collapsed;
             }
+            
             if(selectedItem is Artist)
             {
-                ArtistChanged((Artist)selectedItem);
-        }
+            ArtistChanged((Artist)selectedItem);
+        }            
  }
     }
 }
