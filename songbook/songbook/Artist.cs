@@ -15,7 +15,6 @@ namespace songbook
         {
             Name = name;
             Artists.Add(this);
-            SongsOfArtist.Add(firstSong);
         }
 
         public List<Song> SongsOfArtist = new List<Song>();
@@ -29,7 +28,9 @@ namespace songbook
             {
                 return Artists.First(a => a.Name == name);
             }
-            return new Artist(name, song);
+            var result = new Artist(name, song);
+            result.SongsOfArtist.Add(song);
+            return result;
         }
     }
 }
