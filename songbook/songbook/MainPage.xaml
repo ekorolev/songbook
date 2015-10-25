@@ -16,7 +16,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-
+        
         <StackPanel >
             <TextBox x:Name="SearchControl" FontFamily="Sneakerhead BTN Shadow"
                  Grid.Row="0" PlaceholderText="Search"
@@ -36,8 +36,15 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
             </StackPanel>
-        
-        <local:SongTextControl x:Name="SongTextControl" Canvas.ZIndex="-5" Grid.Row="1"/>
-    </Grid>
 
+        <local:SongTextControl x:Name="SongTextControl" Canvas.ZIndex="-1"  HorizontalAlignment="Left" Height="580" Margin="0,57,0,-630" Grid.RowSpan="2" VerticalAlignment="Top" Width="390" Visibility="Collapsed"/>
+        <ListBox x:Name="ListArtistsControl"
+                  Canvas.ZIndex="-1"  HorizontalAlignment="Left" Height="580" Margin="0,57,0,-630" Grid.RowSpan="2" VerticalAlignment="Top" Width="390" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock  Text="{Binding}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>        
+    </Grid>
 </Page>
