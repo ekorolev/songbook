@@ -43,15 +43,15 @@ namespace songbook
             searchBar.SelectionChanged += SelectionChanged;
             searchBar.ArtistChanged += ArtistChanged;
             listArtistsControl.SelectionChanged += MusicItemChange;
+            
         }
         private void SelectionChanged(Song song)
         {
             listArtistsControl.Visibility = Visibility.Collapsed;
             songTextControl.Visibility = Visibility.Visible;
         }
-        private void ArtistChanged(Artist artist)
+        public void ArtistChanged(Artist artist)
         {
-            searchBar.conditionOfResultSearchControl = (byte)2;
             List<Song> listofArtistSongs = artist.SongsOfArtist;
             List<MusicItem> musicItems = new List<MusicItem>();
             foreach (var song in listofArtistSongs)
@@ -76,7 +76,6 @@ namespace songbook
             }
             if (selectedItem is Song)
             {
-                searchBar.conditionOfResultSearchControl = (byte)1;
                 MusicItemClick((Song)selectedItem);
                 songTextControl.Visibility = Visibility.Visible;
                 listArtistsControl.Visibility = Visibility.Collapsed;

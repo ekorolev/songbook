@@ -17,7 +17,7 @@ namespace songbook
             this.searchBar.SelectionChanged += ShowSong;
             this.musicItemViewer.MusicItemClick += ShowSong;
         }
-        private void ShowSong(Song song)
+        public void ShowSong(Song song)
         {
             textControl.ClearText();
             XDocument doc = XDocument.Parse(song.Text);

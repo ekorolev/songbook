@@ -19,16 +19,18 @@ using Windows.Phone.UI.Input;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace songbook
-{   
+{  
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+
     public sealed partial class MainPage : Page
     {
         private SearchBar searchBarPanel;
+        private MusicItemsViewer musicItemsViewerPanel;
+        private SongWindow songWindowPanel;
         public MainPage()
         {
-            
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
             FileManager.Songs.ToList();
@@ -38,6 +40,8 @@ namespace songbook
             MusicItemsViewer musicItemsViewer = new MusicItemsViewer(ListArtistsControl, SongTextControl, SearchBar);
             SongWindow songWindow = new SongWindow(SongTextControl, SearchBar, musicItemsViewer);   
             searchBarPanel = SearchBar;
+            songWindowPanel = songWindow;
+            musicItemsViewerPanel = musicItemsViewer;
             HardwareButtons.BackPressed += back_Click;            
          }
 
@@ -56,36 +60,12 @@ namespace songbook
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
-        //private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-           
-        //}
-
-        
-           //SongTextControl.Width = ResultSearchControl.Width = SearchControl.Width = Window.Current.Bounds.Width;
-        
+       
         private void back_Click(object sender, BackPressedEventArgs e)
-        {
-            
-            if (searchBarPanel.conditionOfResultSearchControl == (byte)0)
-            {
-                //exit or check do u want to exit
-                e.Handled = true;
-            }
-            if (searchBarPanel.conditionOfResultSearchControl == (byte)1)
-            {
-                ResultSearchControl.ItemsSource = new ObservableCollection<MusicItem>();
-                ResultSearchControl.Visibility = Visibility.Collapsed;
-                searchBarPanel.conditionOfResultSearchControl = (byte)0;
-                e.Handled = true;
-            }
-            if (searchBarPanel.conditionOfResultSearchControl == (byte)2)
-            {
-                searchBarPanel.conditionOfResultSearchControl = (byte)1;
-                searchBarPanel.SearchAction(searchBarPanel.previousStringToSearch);
-                e.Handled = true;
-            }
+        {            
+          
             
         }
+
     }
 }
