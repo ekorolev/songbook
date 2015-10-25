@@ -25,8 +25,6 @@ namespace songbook
         {
             this.InitializeComponent();
         }
-        private List<Control> addedControls = new List<Control>();
-
         public void AddLine(string mainLine, string extraString = null)
         {
             if (extraString != null)
@@ -63,7 +61,12 @@ namespace songbook
             });
         }
 
-        public List<string> SplitLine(string line)
+        public void ClearText()
+        {
+            Panel.Children.Clear();
+        }
+
+        private List<string> SplitLine(string line)
         {
             List<string> result = new List<string>();
             StringBuilder newPart = new StringBuilder();
