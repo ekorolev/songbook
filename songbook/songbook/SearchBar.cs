@@ -68,7 +68,8 @@ namespace songbook
                 resultSearchControl.Visibility = Visibility.Collapsed;                
             }
             if (selectedItem is Artist)
-            {               
+            {          
+                     
                 resultSearchControl.Visibility = Visibility.Collapsed;   
                 ArtistChanged((Artist)selectedItem);                
             }              

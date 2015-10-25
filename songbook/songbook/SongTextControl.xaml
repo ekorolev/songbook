@@ -11,8 +11,12 @@
 
     <Grid>
         <ScrollViewer x:Name="scrollViewer" ZoomMode="Enabled">
-            <StackPanel x:Name="Panel" Margin="0" Background="#FFD80808" AreScrollSnapPointsRegular="True"/>
+            <StackPanel x:Name="Panel" Margin="0" Background="#FFD80808" 
+                        AreScrollSnapPointsRegular="True"/>
         </ScrollViewer>
-        <HyperlinkButton x:Name="forLoseFocus" Content="_" HorizontalAlignment="Center" Margin="64,10,0,0" VerticalAlignment="Bottom" Opacity="0" FontSize="2.667"/>
+        <HyperlinkButton x:Name="forLoseFocus" 
+                         Content="_" HorizontalAlignment="Center" 
+                         Margin="64,10,0,0" VerticalAlignment="Bottom" 
+                         Opacity="0" FontSize="2.667"/>
     </Grid>
 </UserControl>

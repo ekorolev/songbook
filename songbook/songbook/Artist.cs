@@ -7,6 +7,7 @@ namespace songbook
     {
         public static List<Artist> Artists = new List<Artist>();
         public readonly string Name;
+        public readonly string PathToIcon;
         public string ScreenName
         {
             get
@@ -14,8 +15,16 @@ namespace songbook
                 return Name;
             }
         }
+        public string IconPath
+        {
+            get
+            {
+                return PathToIcon;
+            }
+        }
         private Artist(string name, Song firstSong)
         {
+            PathToIcon = "Assets/artist.png";
             Name = name;
             Artists.Add(this);
         }

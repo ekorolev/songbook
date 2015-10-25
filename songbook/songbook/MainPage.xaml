@@ -5,8 +5,10 @@
     xmlns:local="using:songbook"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="white">
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="Fill" ImageSource="Assets/background.png"/>
+    </Page.Background>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -17,24 +19,31 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="0">
-            <TextBox x:Name="SearchControl" FontFamily="Sneakerhead BTN Shadow"
+            <TextBox x:Name="SearchControl" FontFamily="Sneakerhead BTN Shadow" 
                  Grid.Row="0" PlaceholderText="Search"  Margin="5,5,5,0" Padding="5"
-                 FontSize="22" Background="White" Height="40" VerticalAlignment="Center"
-                     Foreground="#FF0E0D0D" BorderBrush="Blue" BorderThickness="1"  />
+                 FontSize="22" Height="40" VerticalAlignment="Center"
+                     Foreground="#FF0E0D0D" BorderBrush="Blue" BorderThickness="1"  >
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
 
-                <ListBox x:Name="ResultSearchControl"
+            <ListBox x:Name="ResultSearchControl"
                  Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
-                 FontSize="26" MaxHeight="200"
+                 FontSize="24" MaxHeight="250"
                  Visibility="Collapsed" Canvas.ZIndex="1000"     
                  >
 
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock  Text="{Binding}"/>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox> 
-            </StackPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding IconPath}" Width="27" Height="27"/>
+                            <TextBlock  Text="{Binding ScreenName}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
 
         <local:SongTextControl x:Name="SongTextControl" Canvas.ZIndex="-1"  
                                HorizontalAlignment="Center" 
@@ -46,9 +55,12 @@
                  Margin="-2,58,12,-1" Background="Transparent" >
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock  Text="{Binding}" Foreground="Black"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock  Text="{Binding ScreenName}" FontSize="26" Foreground="Black"/>
+
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-        </ListBox>        
+        </ListBox>
     </Grid>
 </Page>

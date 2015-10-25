@@ -9,6 +9,6 @@ namespace songbook
     public interface MusicItem
     {
       string ScreenName { get; }
-      
+      string IconPath { get; }
     }
 }

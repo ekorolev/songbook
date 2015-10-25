@@ -7,12 +7,20 @@ namespace songbook
     {
         public readonly string FullName;
         public readonly string SongName;
+        public readonly string PathToIcon;
         public readonly Artist Artist;
         public string ScreenName
         {
             get
             { 
                 return FullName;
+            }
+        }
+        public string IconPath
+        {
+            get
+            {
+                return PathToIcon;
             }
         }
 
@@ -34,6 +42,7 @@ namespace songbook
         }
         public Song(string name)
         {
+            PathToIcon = "Assets/song.png";
             if (name == null)
                 name = String.Empty;
             FullName = name;
