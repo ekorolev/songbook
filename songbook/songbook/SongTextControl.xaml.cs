@@ -87,6 +87,7 @@ namespace songbook
 
         public void ClearText()
         {
+            forLoseFocus.Focus(FocusState.Pointer);
             Panel.Children.Clear();
         }
 
