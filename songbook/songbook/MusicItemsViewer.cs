@@ -65,6 +65,7 @@ namespace songbook
                 songTextControl.Visibility = Visibility.Collapsed;
                 listArtistsControl.ItemsSource = tmpCollection;
             }
+            listArtistsControl.Focus(FocusState.Pointer);
         }
         private void MusicItemChange(object sender, SelectionChangedEventArgs e) 
         {
