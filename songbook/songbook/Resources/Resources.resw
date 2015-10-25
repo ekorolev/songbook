@@ -121,7 +121,235 @@
     <value>Король и Шут - Кукла колдуна
 Сплин - Выхода нет
 Сплин - Мое сердце
-Кино - Звезда по имени солнце</value>
+Кино - Звезда по имени солнце
+Бумбокс - Вахтерам
+Кино - Кукушка
+Кино - Восьмиклассница
+ДДТ - Это все
+ДДТ - Осень
+Ария - Беспечный ангел
+Агата Кристи - Как на войне
+Кино - Пачка сигарет
+Сплин - Романс
+ДДТ - Метель
+Наутилус Помпилиус - Прогулки по воде</value>
+  </data>
+  <data name="Агата Кристи - Как на войне" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="Ария - Беспечный ангел" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="Бумбокс - Вахтерам" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="ДДТ - Метель" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="ДДТ - Осень" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="ДДТ - Это все" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="Кино - Восьмиклассница" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+&lt;/text&gt;</value>
   </data>
   <data name="Кино - Звезда по имени солнце" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
@@ -169,6 +397,68 @@
   &lt;string accords="Dm7 Dm7sus2 Dm7 Dm7sus2"&gt;&lt;/string&gt;
 &lt;/text&gt;</value>
   </data>
+  <data name="Кино - Кукушка" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="Кино - Пачка сигарет" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
   <data name="Король и Шут - Кукла колдуна" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;text&gt;
@@ -190,6 +480,37 @@
 	&lt;string&gt;Тех, кто спит уже давно, тех, кому не все равно&lt;/string&gt;
 	&lt;string&gt;В чью я комнату тайком желаю заглянуть,&lt;/string&gt;
 	&lt;string&gt;Чтобы увидеть&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="Наутилус Помпилиус - Прогулки по воде" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
 &lt;/text&gt;</value>
   </data>
   <data name="Сплин - Выхода нет" xml:space="preserve">
@@ -263,6 +584,37 @@
   &lt;string accords="       D          G      D"&gt;Мое сердце остановилось&lt;/string&gt;
   &lt;string accords="                 A7 Hm"&gt;Мое сердце замерло&lt;/string&gt;
   &lt;string&gt;&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="Сплин - Романс" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="D"&gt;Это тестовый текст&lt;/string&gt;
+  &lt;string accords="Am        Dm"&gt;Или текстовый тест, даже не знаю&lt;/string&gt;
+  &lt;string accords="F#"&gt;Строчка, не вызывающая подозрений&lt;/string&gt;
+  &lt;string accords="Am        H"&gt;Имеющая подозрительную активность строчка&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="Am"&gt;О-ё-ё-ей, ла-ла-ла-ла, уе-уа&lt;/string&gt;
+  &lt;string accords="F#"&gt;Тарам-парам-па-пара-па, траля-ля-ля&lt;/string&gt;
+  &lt;string accords="D"&gt;У-е-е, тили-вили, о-ё-ё-ей&lt;/string&gt;
+  &lt;string accords="F#         B"&gt;Пара-папарам-парарам, тара-рарарам-пара-па!&lt;/string&gt;
 &lt;/text&gt;</value>
   </data>
 </root>
