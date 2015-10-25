@@ -100,8 +100,16 @@ namespace songbook
             }
             var musicItemquery = from musicItem in musicItems where (musicItem.ScreenName.Contains(StringToSearch)) select musicItem;
             foreach (MusicItem musicItem in musicItemquery)
-                tmpCollection.Add(musicItem);
+            tmpCollection.Add(musicItem);
+            if (tmpCollection.Count == 0)
+            {
+                ObservableCollection<string> tmpNotFoundCollection = new ObservableCollection<string>();
+                tmpNotFoundCollection.Add("Ничего не найдено");
+                resultSearchControl.ItemsSource = tmpNotFoundCollection;
+                resultSearchControl.Visibility = Visibility.Visible;
+                return;
 
+            }
             resultSearchControl.Visibility = Visibility.Visible;
             resultSearchControl.ItemsSource = tmpCollection;
         }
