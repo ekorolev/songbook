@@ -65,7 +65,6 @@ namespace songbook
         {
             AppStates.RestoreState(SongTextControl, ListArtistsControl);
             e.Handled = true;
-
         }
 
         
