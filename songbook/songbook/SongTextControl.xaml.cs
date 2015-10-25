@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Text;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
@@ -71,8 +72,9 @@ namespace songbook
                         var hl = new HyperlinkButton()
                         {
                             Content = elem,
-                            FontSize = 18,
-                            Background = new SolidColorBrush(Colors.Green)
+                            FontSize = 20,
+                            FontWeight = FontWeights.ExtraBold,
+                            Foreground = new SolidColorBrush(Colors.Maroon)
                         };
                         hl.Click += Hl_Click;
                         stack.Children.Add(hl);
@@ -84,6 +86,7 @@ namespace songbook
             {
                 Text = mainLine,
                 FontSize = 18,
+                Foreground = new SolidColorBrush(Colors.Black),
                 HorizontalAlignment = HorizontalAlignment.Stretch
             });
         }

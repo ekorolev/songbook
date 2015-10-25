@@ -50,13 +50,16 @@
                                Margin="5,0,5,0" 
                                Grid.Row="2" VerticalAlignment="Center" 
                                Visibility="Collapsed"/>
-        <ListBox x:Name="ListArtistsControl"
-                  Canvas.ZIndex="-100"  HorizontalAlignment="Center" VerticalAlignment="Center" 
+        <ListBox x:Name="ListArtistsControl" Height="600" 
+                  Canvas.ZIndex="-100"  HorizontalAlignment="Center" 
+                 VerticalAlignment="Center" 
                  Margin="-2,58,12,-1" Background="Transparent" >
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock  Text="{Binding ScreenName}" FontSize="26" Foreground="Black"/>
+                        <Image Source="{Binding IconPath}" Width="27" Height="27"/>
+                        <TextBlock  Text="{Binding ScreenName}" 
+                                    FontSize="26" Foreground="Black"/>
 
                     </StackPanel>
                 </DataTemplate>
