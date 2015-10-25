@@ -9,9 +9,10 @@
     Title="G1"
     PrimaryButtonText="Close"
     PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
-    SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick"
+    Margin="0, 0, 0, 0">
 
     <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-        <Image x:Name="AccordImage" Source="Assets/SmallLogo.png" />
+        <Image x:Name="AccordImage" Source="Assets/SmallLogo.png" Width="150" />
     </StackPanel>
 </ContentDialog>
