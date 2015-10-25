@@ -59,10 +59,9 @@ namespace songbook
            
         //}
 
-        private void Page_Loaded(object sender, RoutedEventArgs e)
-        {
-           SongTextControl.Width = ResultSearchControl.Width = SearchControl.Width = Window.Current.Bounds.Width;
-        }
+        
+           //SongTextControl.Width = ResultSearchControl.Width = SearchControl.Width = Window.Current.Bounds.Width;
+        
         private void back_Click(object sender, BackPressedEventArgs e)
         {
             
