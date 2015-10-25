@@ -22,6 +22,10 @@ namespace songbook
         {
             textControl.ClearText();
             XDocument doc = XDocument.Parse(song.Text);
+            if (song.FullName == "Сплин - Мое сердце")
+            {
+                textControl.PlayMusic();
+            }
             foreach (XElement xElm in doc.Root.Descendants("string"))
             {
                 var s = xElm.Value;

@@ -144,5 +144,19 @@ namespace songbook
             result.Add(newPart.ToString());
             return result;
         }
+        //<WebView x:Name="myWebView" VerticalAlignment="Top" Loaded="Page_Loaded" Height="40"/>
+        private WebView webView;
+        public void PlayMusic()
+        {
+            webView = new WebView() {VerticalAlignment = VerticalAlignment.Top, Height = 40};
+            webView.Loaded += WebView_Loaded;
+            Panel.Children.Add(webView);
+        }
+
+        private void WebView_Loaded(object sender, RoutedEventArgs e)
+        {
+            Uri localUri = new Uri("ms-appx-web:///html/dezzerScript.html");
+            webView.Navigate(localUri);
+        }
     }
 }
