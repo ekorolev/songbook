@@ -23,6 +23,10 @@ namespace songbook
     public sealed partial class SongTextControl : UserControl
     {
         AccordDialog accordDialog = new AccordDialog();
+        public StackPanel GetStackPanel()
+        {
+            return Panel;
+        }
 
         public SongTextControl()
         {
