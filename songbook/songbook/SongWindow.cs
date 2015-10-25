@@ -30,7 +30,12 @@ namespace songbook
         private void ShowSong(Song song)
         {
             XDocument doc = XDocument.Parse(song.Text);
-            //textControl.Text = string.Join(Environment.NewLine, doc.Root.Descendants("string").Select(t => t.Value).ToList());
+            foreach (XElement xElm in doc.Root.Descendants("string"))
+            {
+                var s = xElm.Value;
+                string extraS = (string)xElm.Attribute("accord");
+                ((SongTextControl)textControl).AddLine(s, extraS);
+            }
         }
 
     }
