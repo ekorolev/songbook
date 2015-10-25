@@ -119,7 +119,56 @@
   </resheader>
   <data name="AllSongs" xml:space="preserve">
     <value>Король и Шут - Кукла колдуна
-Сплин - Выхода нет</value>
+Сплин - Выхода нет
+Сплин - Мое сердце
+Кино - Звезда по имени солнце</value>
+  </data>
+  <data name="Кино - Звезда по имени солнце" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="         Am"&gt;Белый снег, серый лед,&lt;/string&gt;
+  &lt;string accords="           C"&gt;На растрескавшейся земле.&lt;/string&gt;
+  &lt;string accords="   Dm"&gt;Одеялом лоскутным на ней -&lt;/string&gt;
+  &lt;string accords=" G"&gt;Город в дорожной петле.`&lt;/string&gt;
+  &lt;string accords="       Am"&gt;А над городом плывут облака,&lt;/string&gt;
+  &lt;string accords="      C"&gt;Закрывая небесный свет.&lt;/string&gt;
+  &lt;string accords="       Dm"&gt;А над городом - желтый дым,&lt;/string&gt;
+  &lt;string accords=" G"&gt;Городу две тысячи лет,&lt;/string&gt;
+  &lt;string accords="  Dm"&gt;Прожитых под светом Звезды&lt;/string&gt;
+  &lt;string accords="          Am"&gt;По имени Солнце...&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Проигрыш&lt;/string&gt;
+  &lt;string accords="Dm7 Dm7sus2 Dm7 Dm7sus2"&gt;&lt;/string&gt;
+  &lt;string&gt;
+  &lt;string accords="          Am"&gt;И две тысячи лет - война,&lt;/string&gt;
+  &lt;string accords="      C"&gt;Война без особых причин.&lt;/string&gt;
+  &lt;string accords="      Dm"&gt;Война - дело молодых,&lt;/string&gt;
+  &lt;string accords="     G"&gt;Лекарство против морщин.&lt;/string&gt;
+  &lt;string accords="  Am"&gt;Красная, красная кровь -&lt;/string&gt;
+  &lt;string accords="           C"&gt;Через час уже просто земля,&lt;/string&gt;
+  &lt;string accords="            Dm"&gt;Через два на ней цветы и трава,&lt;/string&gt;
+  &lt;string accords="            G"&gt;Через три она снова жива&lt;/string&gt;
+  &lt;string accords="         Dm"&gt;И согрета лучами Звезды&lt;/string&gt;
+  &lt;string accords="                Am"&gt;По имени Солнце...&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Проигрыш&lt;/string&gt;
+  &lt;string accords="Dm7 Dm7sus2 Dm7 Dm7sus2"&gt;&lt;/string&gt;
+  &lt;string&gt;
+  &lt;string accords="          Am"&gt;И мы знаем, что так было всегда,&lt;/string&gt;
+  &lt;string accords="              C"&gt;Что Судьбою больше любим,&lt;/string&gt;
+  &lt;string accords="            Dm"&gt;Кто живет по законам другим&lt;/string&gt;
+  &lt;string accords="       G"&gt;ЛИ кому умирать молодым.&lt;/string&gt;
+  &lt;string accords="          Am"&gt;Он не помнит слово 'да' и слово 'нет',&lt;/string&gt;
+  &lt;string accords="          C"&gt;Он не помнит ни чинов, ни имен.&lt;/string&gt;
+  &lt;string accords="        Dm"&gt;И способен дотянуться до звезд,&lt;/string&gt;
+  &lt;string accords="          G"&gt;Не считая, что это сон,&lt;/string&gt;
+  &lt;string accords="      Dm"&gt;И упасть, опаленным Звездой&lt;/string&gt;
+  &lt;string accords="                Am"&gt;По имени Солнце...&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Проигрыш&lt;/string&gt;
+  &lt;string accords="Dm7 Dm7sus2 Dm7 Dm7sus2"&gt;&lt;/string&gt;
+
+&lt;/text&gt;</value>
   </data>
   <data name="Король и Шут - Кукла колдуна" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
@@ -161,6 +210,60 @@
 	&lt;string accord="                       G        D"&gt;        Кровью, как в метрополитене:&lt;/string&gt;
 	&lt;string accord="                 C     D"&gt;        "Выхода нет".&lt;/string&gt;
 	&lt;string accord="                Em"&gt;        Выхода нет!&lt;/string&gt;
+&lt;/text&gt;</value>
+  </data>
+  <data name="Сплин - Мое сердце" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;text&gt;
+  &lt;string accords="        D                          G      D"&gt;Мы не знали друг друга до этого лета&lt;/string&gt;
+  &lt;string accords="           G     D     A7         Hm"&gt;Мы болтались по свету в земле и воде&lt;/string&gt;
+  &lt;string accords="            D                          G      D"&gt;И совершенно случайно мы взяли билеты&lt;/string&gt;
+  &lt;string accords=" G         D             A7         Hm"&gt;На соседние кресла на большой высоте&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев:&lt;/string&gt;
+  &lt;string accords="       D          G      D"&gt;И мое сердце остановилось&lt;/string&gt;
+  &lt;string accords="                 A7 Hm"&gt;Мое сердце замерло&lt;/string&gt;
+  &lt;string accords="       D          G      D"&gt;Мое сердце остановилось&lt;/string&gt;
+  &lt;string accords="                 A7 Hm"&gt;Мое сердце замерло&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="        D                          G      D"&gt;И ровно тысячу лет мы просыпаемся вместе&lt;/string&gt;
+  &lt;string accords="           G     D     A7         Hm"&gt;Даже если уснули в разных местах&lt;/string&gt;
+  &lt;string accords="            D                          G      D"&gt;Мы идем ставить кофе под Элвиса Пресли&lt;/string&gt;
+  &lt;string accords=" G         D             A7         Hm"&gt;Кофе сбежал про Propellerheads, ах&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев:&lt;/string&gt;
+  &lt;string accords="       D          G      D"&gt;И мое сердце остановилось&lt;/string&gt;
+  &lt;string accords="                 A7 Hm"&gt;Мое сердце замерло&lt;/string&gt;
+  &lt;string accords="       D          G      D"&gt;Мое сердце остановилось&lt;/string&gt;
+  &lt;string accords="                 A7 Hm"&gt;Мое сердце замерло&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="        D                          G      D"&gt;И может быть ты не стала звездой в Голливуде&lt;/string&gt;
+  &lt;string accords="           G     D     A7         Hm"&gt;Не выходишь на подиум в нижнем белье&lt;/string&gt;
+  &lt;string accords="            D                          G      D"&gt;У тебя не берут автографы люди&lt;/string&gt;
+  &lt;string accords=" G         D             A7         Hm"&gt;И поешь ты чуть тише, чем Монсеррат Кабалье&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="        D                          G      D"&gt;Ну и я, слава Богу, не Рикки не Мартин&lt;/string&gt;
+  &lt;string accords="           G     D     A7         Hm"&gt;Не выдвигался на Оскар французам не забивал&lt;/string&gt;
+  &lt;string accords="            D                          G      D"&gt;Моим именем не назван город на карте,&lt;/string&gt;
+  &lt;string accords=" G         D             A7         Hm"&gt;Но задернуты шторы и разложен диван&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев:&lt;/string&gt;
+  &lt;string accords="       D          G      D"&gt;И мое сердце остановилось&lt;/string&gt;
+  &lt;string accords="                 A7 Hm"&gt;Мое сердце замерло&lt;/string&gt;
+  &lt;string accords="       D          G      D"&gt;Мое сердце остановилось&lt;/string&gt;
+  &lt;string accords="                 A7 Hm"&gt;Мое сердце замерло&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string accords="        D                          G      D"&gt;Я наяву вижу то, что многим даже не снилось&lt;/string&gt;
+  &lt;string accords="           G     D     A7         Hm"&gt;Не являлось под кайфом, не стучалось в стекло&lt;/string&gt;
+  &lt;string accords="       D          G      D"&gt;Мое сердце остановилось &lt;/string&gt;
+  &lt;string accords=" G         D             A7         Hm"&gt;Отдышалось немного и снова пошло&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
+  &lt;string&gt;Припев (2 раза):&lt;/string&gt;
+  &lt;string accords="       D          G      D"&gt;И мое сердце остановилось&lt;/string&gt;
+  &lt;string accords="                 A7 Hm"&gt;Мое сердце замерло&lt;/string&gt;
+  &lt;string accords="       D          G      D"&gt;Мое сердце остановилось&lt;/string&gt;
+  &lt;string accords="                 A7 Hm"&gt;Мое сердце замерло&lt;/string&gt;
+  &lt;string&gt;&lt;/string&gt;
 &lt;/text&gt;</value>
   </data>
 </root>
