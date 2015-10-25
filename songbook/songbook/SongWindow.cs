@@ -8,12 +8,14 @@ namespace songbook
     {
         private SearchBar searchBar;
         private SongTextControl textControl;
-        public SongWindow(SongTextControl textControl, SearchBar searchBar)
+        private MusicItemsViewer musicItemViewer;
+        public SongWindow(SongTextControl textControl, SearchBar searchBar, MusicItemsViewer musicItemViewer)
         {
+            this.musicItemViewer = musicItemViewer;
             this.textControl = textControl;
             this.searchBar = searchBar;
             this.searchBar.SelectionChanged += ShowSong;
-
+            this.musicItemViewer.MusicItemClick += ShowSong;
         }
         private void ShowSong(Song song)
         {

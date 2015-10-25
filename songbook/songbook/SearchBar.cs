@@ -36,8 +36,13 @@ namespace songbook
 
         private TextBox searchControl;
         private ListBox resultSearchControl;
+
         public delegate void SelectionChangedEventHandler(Song song);       
         public event SelectionChangedEventHandler SelectionChanged;
+
+        public delegate void ArtistSelectionChangedEventHandler(Artist artist);
+        public event ArtistSelectionChangedEventHandler ArtistChanged;
+
         public string previousStringToSearch;
 
         /// 0 - ResultSearchControl - collapsed
@@ -50,6 +55,7 @@ namespace songbook
             this.resultSearchControl = resultSearchControl;            
             searchControl.TextChanged += searchControl_TextChanged;
             resultSearchControl.SelectionChanged += ResultSearchControl_SelectionChanged;
+
             previousStringToSearch = String.Empty;
             conditionOfResultSearchControl = (byte)0;
         }
@@ -68,23 +74,9 @@ namespace songbook
             }
             if (selectedItem is Artist)
             {
-                conditionOfResultSearchControl = (byte)2;
-              List<Song> listofArtistSongs = ((Artist)selectedItem).SongsOfArtist;
-              List<MusicItem> musicItems = new List<MusicItem>();
-              foreach (var song in listofArtistSongs)
-              {
-                  musicItems.Add(song);
-              }
-              ObservableCollection<MusicItem> tmpCollection = new ObservableCollection<MusicItem>();
-              foreach (MusicItem musicItem in musicItems)
-              {
-                  tmpCollection.Add(musicItem);
-                  resultSearchControl.Visibility = Visibility.Visible;
-                  resultSearchControl.ItemsSource = tmpCollection;
-              }
-               
-            }             
-           
+                resultSearchControl.Visibility = Visibility.Collapsed;   
+                ArtistChanged((Artist)selectedItem);
+            }              
         }
         private void searchControl_TextChanged(object sender, TextChangedEventArgs e)
         {

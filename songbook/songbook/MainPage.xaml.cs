@@ -35,8 +35,8 @@ namespace songbook
             FileManager.Artists.ToList();            
             this.NavigationCacheMode = NavigationCacheMode.Required;
             SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl);
-            SongWindow songWindow = new SongWindow(SongTextControl, SearchBar);
             MusicItemsViewer musicItemsViewer = new MusicItemsViewer(ListArtistsControl, SongTextControl, SearchBar);
+            SongWindow songWindow = new SongWindow(SongTextControl, SearchBar, musicItemsViewer);            
             searchBarPanel = SearchBar;
             HardwareButtons.BackPressed += back_Click;            
          }
