@@ -22,16 +22,34 @@ namespace songbook
 {
     public sealed partial class SongTextControl : UserControl
     {
-        AccordDialog accordDialog = new AccordDialog();
+
+       
         public StackPanel GetStackPanel()
         {
             return Panel;
         }
 
+        readonly AccordDialog accordDialog = new AccordDialog();
+
+        public void SetStackPanel(StackPanel stackPanel)
+        {
+            Panel = stackPanel;
+        }
+
         public SongTextControl()
         {
             this.InitializeComponent();
+            accordDialog.Closed += AccordDialog_Closed;
         }
+
+        private void AccordDialog_Closed(ContentDialog sender, ContentDialogClosedEventArgs args)
+        {
+            if (clickedButton != null)
+            {
+                clickedButton.Focus(FocusState.Pointer);
+            }
+        }
+
         public void AddLine(string mainLine, string extraString = null)
         {
             if (extraString != null)
@@ -70,11 +88,12 @@ namespace songbook
             });
         }
 
+        private HyperlinkButton clickedButton;
         private void Hl_Click(object sender, RoutedEventArgs e)
         {
-            var hl = (HyperlinkButton) sender;
-            var accordText = (string)hl.Content;
-            accordDialog.SetAccord(hl.Content.ToString());
+            clickedButton = (HyperlinkButton) sender;
+            var accordText = (string)clickedButton.Content;
+            accordDialog.SetAccord(clickedButton.Content.ToString());
             accordDialog.ShowAsync();
         }
 
