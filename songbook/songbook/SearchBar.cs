@@ -55,24 +55,29 @@ namespace songbook
         }
         private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var selectedItem = ((MusicItem)((ListBox)sender).SelectedItem);
-            if (selectedItem == null)
-            {
-                return;
-            }
-            AppStates.SaveState(songTextControl, listArtistsControl);
-            if (selectedItem is Song)
-            {               
-                SelectionChanged((Song)selectedItem);
-                resultSearchControl.Visibility = Visibility.Collapsed;                
-            }
             
-            if (selectedItem is Artist)
-            {          
-                     
-                resultSearchControl.Visibility = Visibility.Collapsed;   
-                ArtistChanged((Artist)selectedItem);                
-            }
+                var selectedItem = ((MusicItem)((ListBox)sender).SelectedItem);
+                if (selectedItem == null)
+                {
+                    return;
+                }
+                AppStates.SaveState(songTextControl, listArtistsControl);
+                if (selectedItem is Song)
+                {
+                    if (((Song)selectedItem).PathToIcon == "Assets/404.png")
+                        {
+                            return;
+                        }
+                    SelectionChanged((Song)selectedItem);
+                    resultSearchControl.Visibility = Visibility.Collapsed;
+                }
+
+                if (selectedItem is Artist)
+                {
+
+                    resultSearchControl.Visibility = Visibility.Collapsed;
+                    ArtistChanged((Artist)selectedItem);
+                }
             
         }
         private void searchControl_TextChanged(object sender, TextChangedEventArgs e)
@@ -104,8 +109,8 @@ namespace songbook
             tmpCollection.Add(musicItem);
             if (tmpCollection.Count == 0)
             {
-                ObservableCollection<string> tmpNotFoundCollection = new ObservableCollection<string>();
-                tmpNotFoundCollection.Add("Ничего не найдено");
+                ObservableCollection<MusicItem> tmpNotFoundCollection = new ObservableCollection<MusicItem>();
+                tmpNotFoundCollection.Add(new Song("Ничего не найдено", 3));
                 resultSearchControl.ItemsSource = tmpNotFoundCollection;
                 resultSearchControl.Visibility = Visibility.Visible;
                 return;

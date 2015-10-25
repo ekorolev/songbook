@@ -111,6 +111,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\404.png" />
     <Content Include="Assets\A.gif" />
     <Content Include="Assets\A7.gif" />
     <Content Include="Assets\Am.gif" />

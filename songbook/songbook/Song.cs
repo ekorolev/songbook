@@ -40,6 +40,11 @@ namespace songbook
         {
             return ScreenName;
         }
+        public Song (string name, int k)
+        {
+            FullName = name;
+            PathToIcon="Assets/404.png";
+        }
         public Song(string name)
         {
             PathToIcon = "Assets/song.png";
