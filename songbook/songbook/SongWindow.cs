@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+﻿using System.Xml.Linq;
 using Windows.UI.Xaml.Controls;
 
 
@@ -19,8 +7,8 @@ namespace songbook
     public class SongWindow
     {
         private SearchBar searchBar;
-        private Control textControl;
-        public SongWindow(Control textControl, SearchBar searchBar)
+        private SongTextControl textControl;
+        public SongWindow(SongTextControl textControl, SearchBar searchBar)
         {
             this.textControl = textControl;
             this.searchBar = searchBar;
@@ -29,12 +17,13 @@ namespace songbook
         }
         private void ShowSong(Song song)
         {
+            textControl.ClearText();
             XDocument doc = XDocument.Parse(song.Text);
             foreach (XElement xElm in doc.Root.Descendants("string"))
             {
                 var s = xElm.Value;
                 string extraS = (string)xElm.Attribute("accord");
-                ((SongTextControl)textControl).AddLine(s, extraS);
+                textControl.AddLine(s, extraS);
             }
         }
 
