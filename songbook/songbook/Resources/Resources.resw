@@ -462,7 +462,7 @@
   <data name="Король и Шут - Кукла колдуна" xml:space="preserve">
     <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;text&gt;
-	&lt;string accords=" Dm             F       Gm         A"&gt;Темный мрачный коридор, я на цыпочках как вор&lt;/string&gt;
+	&lt;string accord=" Dm             F       Gm         A"&gt;Темный мрачный коридор, я на цыпочках как вор&lt;/string&gt;
 	&lt;string&gt;Пробираюсь чуть дыша, чтобы не вспугнуть&lt;/string&gt;
 	&lt;string&gt;Тех, кто спит уже давно, тех, кому не все равно&lt;/string&gt;
 	&lt;string&gt;В чью я комнату тайком желаю заглянуть,&lt;/string&gt;
@@ -475,7 +475,7 @@
 	&lt;string accord="                Gm           A"&gt;       Зачем тебе охотиться на людей?&lt;/string&gt;
 	
 	&lt;string&gt;Проигрыш (2 раза)&lt;/string&gt;
-	&lt;string accords=" Dm             F       Gm         A"&gt;Темный мрачный коридор, я на цыпочках как вор&lt;/string&gt;
+	&lt;string accord=" Dm             F       Gm         A"&gt;Темный мрачный коридор, я на цыпочках как вор&lt;/string&gt;
 	&lt;string&gt;Пробираюсь чуть дыша, чтобы не вспугнуть&lt;/string&gt;
 	&lt;string&gt;Тех, кто спит уже давно, тех, кому не все равно&lt;/string&gt;
 	&lt;string&gt;В чью я комнату тайком желаю заглянуть,&lt;/string&gt;
