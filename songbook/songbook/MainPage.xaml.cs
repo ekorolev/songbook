@@ -19,15 +19,12 @@ using Windows.Phone.UI.Input;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace songbook
-{
-   
+{   
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public delegate void BackPressedEventHandler();
-        public event BackPressedEventHandler BackPressed;
         private SearchBar searchBarPanel;
         public MainPage()
         {
@@ -71,16 +68,19 @@ namespace songbook
             
             if (searchBarPanel.conditionOfResultSearchControl == (byte)0)
             {
+                //exit or check do u want to exit
                 e.Handled = true;
             }
             if (searchBarPanel.conditionOfResultSearchControl == (byte)1)
             {
                 ResultSearchControl.ItemsSource = new ObservableCollection<MusicItem>();
                 ResultSearchControl.Visibility = Visibility.Collapsed;
+                searchBarPanel.conditionOfResultSearchControl = (byte)0;
                 e.Handled = true;
             }
             if (searchBarPanel.conditionOfResultSearchControl == (byte)2)
             {
+                searchBarPanel.conditionOfResultSearchControl = (byte)1;
                 searchBarPanel.SearchAction(searchBarPanel.previousStringToSearch);
                 e.Handled = true;
             }
