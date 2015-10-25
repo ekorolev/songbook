@@ -36,7 +36,21 @@
                 </ListBox>
             </StackPanel>
         </Canvas>
-        <local:SongTextControl x:Name="SongTextControl" Canvas.ZIndex="-1"  HorizontalAlignment="Left" Height="580" Margin="0,50,0,-630" Grid.RowSpan="2" VerticalAlignment="Top" Width="390"/>
+        <local:SongTextControl x:Name="SongTextControl" Visibility="Collapsed" Canvas.ZIndex="-1"  HorizontalAlignment="Left" Height="580" Margin="0,50,0,-630" Grid.RowSpan="2" VerticalAlignment="Top" Width="390" />
+        
+        <ListBox x:Name="ListArtistsControl"
+                 Canvas.ZIndex="-1"
+                 HorizontalAlignment="Left" 
+                 Height="580" Margin="0,50,0,-630"
+                 Grid.RowSpan="2"
+                 VerticalAlignment="Top"
+                 Width="390">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock  Text="{Binding}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 
 </Page>

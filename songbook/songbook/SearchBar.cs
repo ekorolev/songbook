@@ -36,11 +36,10 @@ namespace songbook
 
         private TextBox searchControl;
         private ListBox resultSearchControl;
-
-        public delegate void SelectionChangedEventHandler(Song song);
+        public delegate void SelectionChangedEventHandler(Song song);       
         public event SelectionChangedEventHandler SelectionChanged;
         public string previousStringToSearch;
-        
+
         /// 0 - ResultSearchControl - collapsed
         /// 1 - ResultSearchControl - visible with itemsource = SearchAction
         /// 2 - ResultSearchControl - visible with itemsource = SongsOfArtist
@@ -48,7 +47,7 @@ namespace songbook
         public SearchBar(TextBox searchControl, ListBox resultSearchControl)
         {
             this.searchControl = searchControl;
-            this.resultSearchControl = resultSearchControl;
+            this.resultSearchControl = resultSearchControl;            
             searchControl.TextChanged += searchControl_TextChanged;
             resultSearchControl.SelectionChanged += ResultSearchControl_SelectionChanged;
             previousStringToSearch = String.Empty;
@@ -65,7 +64,7 @@ namespace songbook
             {
                 conditionOfResultSearchControl = (byte)1;
                 SelectionChanged((Song)selectedItem);
-                resultSearchControl.Visibility = Visibility.Collapsed;
+                resultSearchControl.Visibility = Visibility.Collapsed;                
             }
             if (selectedItem is Artist)
             {

@@ -31,10 +31,12 @@ namespace songbook
             
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            
-            this.NavigationCacheMode = NavigationCacheMode.Required;            
+            FileManager.Songs.ToList();
+            FileManager.Artists.ToList();            
+            this.NavigationCacheMode = NavigationCacheMode.Required;
             SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl);
             SongWindow songWindow = new SongWindow(SongTextControl, SearchBar);
+            MusicItemsViewer musicItemsViewer = new MusicItemsViewer(ListArtistsControl, SongTextControl, SearchBar);
             searchBarPanel = SearchBar;
             HardwareButtons.BackPressed += back_Click;            
          }
