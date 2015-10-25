@@ -7,9 +7,12 @@ namespace songbook
     {
         public static List<Artist> Artists = new List<Artist>();
         public readonly string Name;
-        public string ScreenName { get{
-            return Name;
-        }
+        public string ScreenName
+        {
+            get
+            {
+                return Name;
+            }
         }
         private Artist(string name, Song firstSong)
         {
@@ -24,11 +27,15 @@ namespace songbook
         }
         public static Artist GetOrAddArtist(string name, Song song)
         {
+            Artist result;
             if (Artists.Exists(a => a.Name == name))
             {
-                return Artists.First(a => a.Name == name);
+                result = Artists.First(a => a.Name == name);
             }
-            var result = new Artist(name, song);
+            else
+            {
+                result = new Artist(name, song);
+            }
             result.SongsOfArtist.Add(song);
             return result;
         }
