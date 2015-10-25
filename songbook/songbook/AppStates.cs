@@ -13,11 +13,10 @@ namespace songbook
     {
         private static Stack<AppState> States { get; set; }
 
-        public static AppStates()
+        static AppStates()
         {
             States = new Stack<AppState>();
-        }
-
+        }        
         public static void SaveState(SongTextControl songTextControl, ListBox listArtistsControl)
         {
             var state = new AppState
@@ -63,7 +62,7 @@ namespace songbook
         public Visibility SongTextControlVisible { get; set; }
         public ObservableCollection<MusicItem> ListArtistsControlItems { get; set; }
         public StackPanel SongTextControlStack { get; set; }
-        public static void SaveState(SongTextControl songTextControl, ListBox listArtistsControl)
+        public void SaveState(SongTextControl songTextControl, ListBox listArtistsControl)
         {
             var state = new AppState
             {
@@ -79,7 +78,7 @@ namespace songbook
                 state.ListArtistsControlItems.Add(item);
             }           
         }
-        public static void RestoreState(AppState state, SongTextControl songTextControl, ListBox listArtistsControl)
+        public void RestoreState(AppState state, SongTextControl songTextControl, ListBox listArtistsControl)
         {
             listArtistsControl.Visibility = state.ListArtistsControlVisible;
             songTextControl.Visibility = state.SongTextControlVisible;

@@ -74,6 +74,7 @@ namespace songbook
             {
                 return;
             }
+            AppStates.SaveState(songTextControl, listArtistsControl);
             if (selectedItem is Song)
             {
                 MusicItemClick((Song)selectedItem);

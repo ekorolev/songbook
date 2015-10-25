@@ -36,13 +36,14 @@ namespace songbook
             FileManager.Songs.ToList();
             FileManager.Artists.ToList();            
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl);                       
+            SearchBar SearchBar = new SearchBar(SearchControl, ResultSearchControl, SongTextControl, ListArtistsControl);                       
             MusicItemsViewer musicItemsViewer = new MusicItemsViewer(ListArtistsControl, SongTextControl, SearchBar);
             SongWindow songWindow = new SongWindow(SongTextControl, SearchBar, musicItemsViewer);   
             searchBarPanel = SearchBar;
             songWindowPanel = songWindow;
             musicItemsViewerPanel = musicItemsViewer;
-            HardwareButtons.BackPressed += back_Click;            
+            HardwareButtons.BackPressed += back_Click;
+            //AppStates.SaveState(SongTextControl, ListArtistsControl);
          }
 
         /// <summary>
@@ -62,8 +63,10 @@ namespace songbook
         }
        
         private void back_Click(object sender, BackPressedEventArgs e)
-        {            
-          
+        {
+            
+            AppStates.RestoreState(SongTextControl, ListArtistsControl);
+            e.Handled = true;
             
         }
 

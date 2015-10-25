@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace songbook
 {
-    interface MusicItem
+    public interface MusicItem
     {
       string ScreenName { get; }
       

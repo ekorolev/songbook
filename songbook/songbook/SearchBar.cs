@@ -36,22 +36,26 @@ namespace songbook
 
         private TextBox searchControl;
         private ListBox resultSearchControl;
-
+        private SongTextControl songTextControl;
+        private ListBox listArtistsControl;
         public delegate void SelectionChangedEventHandler(Song song);       
         public event SelectionChangedEventHandler SelectionChanged;
 
         public delegate void ArtistSelectionChangedEventHandler(Artist artist);
         public event ArtistSelectionChangedEventHandler ArtistChanged;
 
-         public SearchBar(TextBox searchControl, ListBox resultSearchControl)
+        public SearchBar(TextBox searchControl, ListBox resultSearchControl, SongTextControl songTextControl, ListBox listArtistsControl)
         {
             this.searchControl = searchControl;
-            this.resultSearchControl = resultSearchControl;            
+            this.resultSearchControl = resultSearchControl;
+            this.songTextControl = songTextControl;
+            this.listArtistsControl = listArtistsControl;
             searchControl.TextChanged += searchControl_TextChanged;
             resultSearchControl.SelectionChanged += ResultSearchControl_SelectionChanged;
         }
         private void ResultSearchControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            AppStates.SaveState(songTextControl, listArtistsControl);
             var selectedItem = ((MusicItem)((ListBox)sender).SelectedItem);
             if (selectedItem == null)
             {
@@ -59,6 +63,7 @@ namespace songbook
             }
             if (selectedItem is Song)
             {
+               
                 SelectionChanged((Song)selectedItem);
                 resultSearchControl.Visibility = Visibility.Collapsed;                
             }
@@ -70,7 +75,7 @@ namespace songbook
         }
         private void searchControl_TextChanged(object sender, TextChangedEventArgs e)
         {
-           
+            
             SearchAction(((TextBox)sender).Text);
         }
 
