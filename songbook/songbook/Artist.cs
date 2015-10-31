@@ -28,7 +28,12 @@ namespace songbook
             Name = name;
             Artists.Add(this);
         }
-
+        public Artist(string name) //for bd constructor
+        {
+            PathToIcon = "Assets/artist.png";
+            Name = name;
+            Artists.Add(this);
+        }
         public List<Song> SongsOfArtist = new List<Song>();
         public override string ToString()
         {

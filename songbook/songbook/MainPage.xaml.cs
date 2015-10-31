@@ -43,7 +43,6 @@ namespace songbook
             songWindowPanel = songWindow;
             musicItemsViewerPanel = musicItemsViewer;
             HardwareButtons.BackPressed += back_Click;     
-
          }
 
         /// <summary>
@@ -66,8 +65,6 @@ namespace songbook
         {
             AppStates.RestoreState(SongTextControl, ListArtistsControl);
             e.Handled = true;
-        }
-        
-        
+        }                
     }
 }

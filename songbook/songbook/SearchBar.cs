@@ -114,7 +114,6 @@ namespace songbook
                 resultSearchControl.ItemsSource = tmpNotFoundCollection;
                 resultSearchControl.Visibility = Visibility.Visible;
                 return;
-
             }
             resultSearchControl.Visibility = Visibility.Visible;
             resultSearchControl.ItemsSource = tmpCollection;
