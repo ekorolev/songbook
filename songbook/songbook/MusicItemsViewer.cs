@@ -19,6 +19,7 @@ namespace songbook
 {
     public class MusicItemsViewer
     {
+
         private ListBox listArtistsControl;
         private SongTextControl songTextControl;
         private SearchBar searchBar;
@@ -31,7 +32,7 @@ namespace songbook
             List<Artist> artists = FileManager.Artists.ToList();
             List<MusicItem> musicItems = new List<MusicItem>();
             foreach (var artist in artists)
-            {
+            { 
                 musicItems.Add(artist);
             }
             foreach (MusicItem musicItem in musicItems)
@@ -65,6 +66,7 @@ namespace songbook
                 songTextControl.Visibility = Visibility.Collapsed;
                 listArtistsControl.ItemsSource = tmpCollection;
             }
+            
             listArtistsControl.Focus(FocusState.Pointer);
         }
         private void MusicItemChange(object sender, SelectionChangedEventArgs e) 
