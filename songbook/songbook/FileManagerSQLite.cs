@@ -10,38 +10,12 @@ namespace songbook
     class FileManagerSQLite
     {
         public const string NameTableSongs = "Songs";
-        public const string NameTableAuthors = "Authors";
+        public const string NameTableAtists = "Atists";
 
         private SQLiteConnection connectionToDB;
         public FileManagerSQLite(string dbname)
         {
             this.connectionToDB = new SQLiteConnection(dbname);
-            CreateSongsTable();
-            CreateArtistsTable();
-        }
-        private void CreateSongsTable()
-        {
-            string sqlreq = "CREATE TABLE " + NameTableSongs +
-                                @" (    Id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
-                                        Name VARCHAR(100),
-                                        Author VARCHAR(100),
-                                        PathToText VARCHAR(100)
-                                        );";
-            using (var statement = connectionToDB.Prepare(sqlreq))
-            {
-                statement.Step();
-            }
-        }
-        private void CreateArtistsTable()
-        {
-            string sqlreq = "CREATE TABLE" + NameTableAuthors +
-                                @"      (Id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
-                                        Name VARCHAR(100)
-                                        );";
-            using (var statement = connectionToDB.Prepare(sqlreq))
-            {
-                statement.Step();
-            }
         }
         public List<MusicItem> GetSongs()
         {
@@ -56,18 +30,52 @@ namespace songbook
             }
             return songs;
         }
-        public List<MusicItem> GetAuthors()
+        public List<MusicItem> GetAtists()
         {
-            List<MusicItem> authors = new List<MusicItem>();
-            string sqlreq = "SELECT * FROM " + NameTableAuthors + ";";
+            List<MusicItem> atists = new List<MusicItem>();
+            string sqlreq = "SELECT * FROM " + NameTableAtists + ";";
             using (var statement = connectionToDB.Prepare(sqlreq))
             {
                 while (statement.Step() == SQLiteResult.ROW)
                 {
-                    authors.Add(new Artist((string)statement[1]));
+                    atists.Add(new Artist((string)statement[1]));
                 }
             }
-            return authors;
+            return atists;
+        }
+        public MusicItem getSong(int id)
+        {
+            Song song = null;
+            string sqlreq = "SELECT * FROM" + NameTableSongs + "WHERE ID =?";
+            using (var statement = connectionToDB.Prepare(sqlreq))
+            {
+                statement.Bind(1, id);
+                if (statement.Step() == SQLiteResult.ROW)
+                {
+                    song = new Song((string)statement[1]);
+                }
+            }
+            checkFound(song);
+            return song;
+        }
+        public MusicItem getArtist(int id)
+        {
+            Artist artist = null;
+            string sqlreq = "SELECT * FROM" + NameTableAtists + "WHERE ID =?";
+            using (var statement = connectionToDB.Prepare(sqlreq))
+            {
+                statement.Bind(1, id);
+                if (statement.Step() == SQLiteResult.ROW)
+                {
+                    artist = new Artist((string)statement[1]);
+                }
+            }
+            checkFound(artist);
+            return artist;
+        }       
+        private void checkFound(MusicItem musicItem)
+        {
+            if (musicItem == null) throw new Exception("Can not find music item in sqlBase.");
         }
     }
 }

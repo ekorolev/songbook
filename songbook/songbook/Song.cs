@@ -45,6 +45,7 @@ namespace songbook
             FullName = name;
             PathToIcon="Assets/404.png";
         }
+        public Song() { }
         public Song(string name)
         {
             PathToIcon = "Assets/song.png";
